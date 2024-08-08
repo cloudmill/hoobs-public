@@ -1,0 +1,124 @@
+
+<!--передаем уникальный io-->
+<!--Для добавления мобильной версии картинки добавляем вторым параметром true-->
+<!--Например +picture('image.jpg', 'true')-->
+<!--Миксин будет искать картинку с названием image-mob.jpg (тоесть вторая картинка должна иметь такое же название как и основная, только с добавлением -mob.png/jpg и тд)--><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>ui</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+    <script type="module" crossorigin src="assets/index.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body data-barba="wrapper">
+    <div class="transition-screen">
+    </div>
+    <div class="modal-block">
+    </div>
+    <div class="wrapper">
+      <div class="content" data-barba="container" data-barba-namespace="ui">
+        <main class="ui-page">
+          <div class="inner">
+            <h1 class="title-80">H1 класс title-80</h1>
+            <h2 class="title-64">H2 класс title-64</h2>
+            <h3 class="title-40">H2 класс title-40</h3>
+            <h4 class="title-28">H2 класс title-28</h4><br><br>
+            <p class="text-22"> text-22</p>
+            <p class="text-18"> text-18</p>
+            <p class="text-16"> text-16</p><br><br>
+            <div class="ui-page__button"><a class="button">
+                <div class="button__icon">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                  </svg>
+                </div>
+                <div class="button__text"> дефолт</div></a>
+            </div><br>
+            <div class="ui-page__button"><a class="button button_gray">
+                <div class="button__icon">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                  </svg>
+                </div>
+                <div class="button__text"> серая</div></a>
+            </div><br>
+            <div class="ui-page__button">
+              <button class="button">
+                <div class="button__icon">
+                  <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                  </svg>
+                </div>
+                <div class="button__text"> button с другой иконкой</div>
+              </button>
+            </div><br>
+            <div class="ui-page__button">
+              <button class="button-icon">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
+                </svg>
+              </button>
+            </div><br>
+            <div class="ui-page__button"><a class="button-link">
+                <div class="button-link__icon">
+                  <svg width="20" height="21" viewbox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66674 2.16663L10.0001 2.16663L10.0001 3.08329L18.3334 3.08329H19.0834V3.83329V10.5V11.25L18.3334 11.25H11.6447L13.451 9.74996L17.5834 9.74996V4.58329L10.0001 4.58329L10.0001 5.49996L6.66674 5.49996L6.66674 2.16663ZM6.86571 11.25L8.67198 9.74996H2.54395H1.79395L1.79395 10.5L1.79395 17.1666V17.9166H2.54395H10.0001L10.0001 18.8333L13.3334 18.8333L13.3334 15.5H10.0001L10.0001 16.4166H3.29395L3.29395 11.25H6.86571Z" fill="#00A84F"></path>
+                  </svg>
+                </div>
+                <div class="button-link__text"> Построить маршрут
+                </div></a>
+            </div><br><br>
+            <div class="ui-page__input">
+              <div class="policy">
+                 Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a href="#">персональных данных</a> и соглашаетесь c <a href="#">политикой конфиденциальности</a></div>
+            </div><br><br>
+            <div class="ui-page__input">
+              <div class="input-ui custom-placeholder" data-input-parent="">
+                <input data-input="" required="required" name="name" placeholder="Имя*"/>
+                <div class="custom-placeholder__service"><span>Имя*</span>
+                  <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3001_895)">
+                      <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_3001_895">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div><br><br>
+            <div class="ui-page__input ui-page__black">
+              <div class="input-ui input-ui_white custom-placeholder custom-placeholder_white" data-input-parent="">
+                <input data-input="" required="required" name="name" placeholder="Имя*"/>
+                <div class="custom-placeholder__service"><span>Имя*</span>
+                  <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3001_895)">
+                      <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_3001_895">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    
+  </body>
+</html>
