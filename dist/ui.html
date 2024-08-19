@@ -72,7 +72,7 @@
             </div><br><br>
             <div class="ui-page__input">
               <div class="policy">
-                 Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a href="#">персональных данных</a> и соглашаетесь c <a href="#">политикой конфиденциальности</a></div>
+                 Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a class="inline-link" href="#">персональных данных</a> и соглашаетесь c <a class="inline-link" href="#">политикой конфиденциальности</a></div>
             </div><br><br>
             <div class="tabs">
               <div class="tabs__list">
@@ -112,6 +112,15 @@
               <div class="nav__list"> 
                 <div class="nav__item active"> Все</div>
                 <div class="nav__item"> Новинка</div>
+              </div>
+            </div><br><br>
+            <div class="nav">
+              <div class="nav__list"> 
+                <button class="nav__item active" data-tab-button="attr0">item0</button>
+                <button class="nav__item" data-tab-button="attr1">item1</button>
+                <button class="nav__item" data-tab-button="attr2">item2</button>
+                <button class="nav__item" data-tab-button="attr3">item3</button>
+                <button class="nav__item" data-tab-button="attr4">item4</button>
               </div>
             </div><br><br>
             <div class="ui-page__input">
@@ -170,7 +179,91 @@
                   </svg>
                 </div>
               </div>
+            </div><br><br><a class="download-card" href="#" download="download"> 
+              <div class="download-card__title text-22">download-card</div>
+              <div class="download-card__bottom"> 
+                <div class="download-card__icon">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                  </svg>
+                </div>
+                <div class="download-card__attr text-16"> 
+                  <p class="download-card__type">PDF </p>
+                  <p>–</p>
+                  <p class="download-card__weight">3,2 МБ</p>
+                </div>
+              </div></a><br><br>
+            <div class="guarantee-card">
+              <div class="guarantee-card__icon">
+                <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" fill="#00A84F"></rect>
+                  <path d="M11 19.7778L17.1463 26L29 14" stroke="white" stroke-width="1.5"></path>
+                </svg>
+              </div>
+              <div class="guarantee-card__title text-22">guarantee-card</div>
+            </div><br><br><a class="video-card" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
+              <div class="video-card__preview"> 
+                <picture class="picture">
+                  <source class="lazyload" type="image/webp" srcset="webp/video-preview-2.webp 1x" alt="video-preview-2.jpg"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/video-preview-2.jpg 1x" alt="video-preview-2.jpg"/><img class="picture__img lazyload" data-src="images/video-preview-2.jpg" alt="video-preview-2.jpg"/>
+                </picture>
+              </div>
+              <div class="video-card__title text-22">Циркуляционные насосы: обзор</div></a><br><br>
+            <div class="accordion-ui">
+              <div class="accordion-ui__item">
+                <div class="accordion-ui__header">
+                  <div class="accordion-ui__text text-22">
+                    <div class="accordion-ui__title">Москва</div>
+                    <div class="accordion-ui__subtitle">Гидросеть (Щербинка)</div>
+                    <div class="accordion-ui__object">
+                      <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4394 3.90732C13.7428 2.38868 10.402 2.36307 7.68039 3.83961C4.94854 5.32173 3.36922 7.85049 3.25559 11.0808C3.16632 13.6188 4.15595 15.4403 5.48705 17.1172C7.06368 19.108 9.00366 20.8099 11.2126 22.1422L11.3912 22.25H11.5999H12.5113H12.7228L12.9032 22.1395C14.3547 21.2499 15.6868 20.1768 16.8742 18.9992C18.8795 17.0192 20.8988 14.674 20.7414 11.2086C20.6901 10.0786 20.4753 9.03306 20.1015 8.0846L18.873 9.10488C19.0835 9.77168 19.2075 10.4962 19.2429 11.2766C19.3685 14.0421 17.8014 15.9758 15.8197 17.9324L15.8185 17.9336C14.7541 18.9893 13.5725 19.9486 12.2975 20.75H11.8106C9.82598 19.5253 8.08384 17.9802 6.66268 16.1856L6.66213 16.1849C5.44968 14.6575 4.68273 13.1786 4.75467 11.1335C4.84989 8.42642 6.13757 6.38318 8.3957 5.15807C10.6627 3.92816 13.4532 3.94907 15.6991 5.21194C16.1181 5.45543 16.5012 5.72638 16.8477 6.02427L18.0153 5.05467C17.5503 4.63038 17.0275 4.24856 16.4478 3.91214L16.4478 3.91209L16.4394 3.90732Z" fill="#232629"></path>
+                        <circle cx="12" cy="11.5" r="1" stroke="#232629" stroke-width="1.5"></circle>
+                      </svg>
+                      <div class="title-32">Одинцовский городской округ, дачный посёлок Лесной Городок, Фасадная улица, 2к1 </div>
+                    </div>
+                  </div>
+                  <div class="accordion-ui__icon">
+                    <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12.5H21" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path id="accordion-icon-roll-up" d="M12 7.35714V3.5" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path id="accordion-icon-roll-down" d="M12 21.5V12.5" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-ui__content">
+                  <div class="accordion-ui__content-inner">
+                    <div class="block">content
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div><br><br>
+            <div class="select select-wrapper">
+              <div class="select__button">
+                <input type="text" readonly="readonly" required="required" placeholder="select"/>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </div>
+              <div class="select__list">
+                <ul>
+                  <li>
+                    <p>Все</p>
+                  </li>
+                  <li>
+                    <p>Глеб</p>
+                  </li>
+                  <li>
+                    <p>Россия</p>
+                  </li>
+                  <li>
+                    <p>Огурцы</p>
+                  </li>
+                </ul>
+              </div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </div>
         </main>
       </div>
