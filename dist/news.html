@@ -1,0 +1,727 @@
+
+<!--передаем уникальный io--><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>news</title>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+    <script type="module" crossorigin src="assets/index.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body data-barba="wrapper">
+    <div class="transition-screen">
+    </div>
+    <div class="modal-block">
+    </div>
+    <div class="wrapper">
+      <header class="header" data-header="">
+        <div class="header__inner"> 
+          <div class="container"> 
+            <div class="header__desktop">
+              <div class="header__top">
+                <div class="header__row"> 
+                  <div class="header__col">
+                    <div class="header__list"> 
+                      <div class="header__list-item"> <a class="header__list-link" href="#">
+                          <div class="header__text text-18">Новости</div></a></div>
+                      <div class="header__list-item"> <a class="header__list-link" href="#">
+                          <div class="header__text text-18">Контакты</div></a></div>
+                    </div>
+                  </div>
+                  <div class="header__col">
+                    <div class="header__top-item">
+                      <div class="header__list"> 
+                        <div class="header__list-item"> <a class="header__list-link" href="#">
+                            <div class="header__list-icon"> 
+                              <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4394 3.90732C13.7428 2.38868 10.402 2.36307 7.68039 3.83961C4.94854 5.32173 3.36922 7.85049 3.25559 11.0808C3.16632 13.6188 4.15595 15.4403 5.48705 17.1172C7.06368 19.108 9.00366 20.8099 11.2126 22.1422L11.3912 22.25H11.5999H12.5113H12.7228L12.9032 22.1395C14.3547 21.2499 15.6868 20.1768 16.8742 18.9992C18.8795 17.0192 20.8988 14.674 20.7414 11.2086C20.6901 10.0786 20.4753 9.03306 20.1015 8.0846L18.873 9.10488C19.0835 9.77168 19.2075 10.4962 19.2429 11.2766C19.3685 14.0421 17.8014 15.9758 15.8197 17.9324L15.8185 17.9336C14.7541 18.9893 13.5725 19.9486 12.2975 20.75H11.8106C9.82598 19.5253 8.08384 17.9802 6.66268 16.1856L6.66213 16.1849C5.44968 14.6575 4.68273 13.1786 4.75467 11.1335C4.84989 8.42642 6.13757 6.38318 8.3957 5.15807C10.6627 3.92816 13.4532 3.94907 15.6991 5.21194C16.1181 5.45543 16.5012 5.72638 16.8477 6.02427L18.0153 5.05467C17.5503 4.63038 17.0275 4.24856 16.4478 3.91214L16.4478 3.91209L16.4394 3.90732Z" fill="#232629"></path>
+                                <circle cx="12" cy="11.5" r="1" stroke="#232629" stroke-width="1.5"></circle>
+                              </svg>
+                            </div>
+                            <div class="header__text text-18">Где купить</div></a></div>
+                        <div class="header__list-item"> <a class="header__list-link" href="#">
+                            <div class="header__list-icon"> 
+                              <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7301 2.5L12.7301 15.4555L16.3996 11.2214L17.5332 12.2038L13.2117 17.1901L12.9874 17.4489H12.6449H11.9801H11.3152H10.9728L10.7485 17.1901L6.427 12.2038L7.56054 11.2214L11.2301 15.4555L11.2301 2.5H12.7301Z" fill="#232629"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17.5V20.75H7V22.25H3H2.25V21.5V17.5H3.75ZM17 22.25H21H21.75V21.5V17.5H20.25V20.75H17V22.25Z" fill="#232629"></path>
+                              </svg>
+                            </div>
+                            <div class="header__text text-18">Контакты</div></a></div>
+                      </div>
+                    </div>
+                    <div class="header__top-item">
+                      <div class="header__list"> 
+                        <div class="header__list-item"> <a class="header__list-link" href="tel:88003502380">
+                            <div class="header__text text-18">8 800 350-23-80</div></a></div>
+                        <div class="header__list-item"> <a class="header__list-link" href="mailto:info@hoobs.ru">
+                            <div class="header__text text-18">info@hoobs.ru</div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__bot">
+                <div class="header__row">
+                  <div class="header__col">
+                    <div class="header__wrapper"> 
+                      <div class="header__logo"> <a class="header__logo-link" href="#"> 
+                          <svg width="173" height="77" viewbox="0 0 173 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3001_3995)">
+                              <path d="M37.8078 0H0V77H37.8078V0Z" fill="#00A84F"></path>
+                              <path class="letter" d="M88.9784 43.7872C88.7597 43.1705 88.6372 42.5049 88.6372 41.8123C88.6372 38.6163 91.1822 36.0248 94.3208 36.0248C95.3783 36.0248 96.3684 36.3209 97.2167 36.8323L101.778 32.9829C99.7762 31.2283 97.1711 30.1663 94.3232 30.1663C88.0051 30.1663 82.8838 35.3812 82.8838 41.8148C82.8838 43.9389 83.4437 45.926 84.4195 47.6415L88.9808 43.7921L88.9784 43.7872Z" fill="#232629"></path>
+                              <path class="letter" d="M99.6659 39.835C99.8846 40.4517 100.007 41.1173 100.007 41.8099C100.007 45.0059 97.4621 47.5974 94.3235 47.5974C93.2661 47.5974 92.2759 47.3013 91.4276 46.7898L86.8662 50.6392C88.8681 52.3938 91.4732 53.4559 94.3211 53.4559C100.639 53.4559 105.761 48.241 105.761 41.8074C105.761 39.6833 105.201 37.6962 104.225 35.9807L99.6635 39.8301L99.6659 39.835Z" fill="#232629"></path>
+                              <path class="letter" d="M124.368 39.835C124.587 40.4517 124.709 41.1173 124.709 41.8099C124.709 45.0059 122.164 47.5974 119.026 47.5974C117.968 47.5974 116.978 47.3013 116.13 46.7898L111.568 50.6392C113.57 52.3938 116.175 53.4559 119.023 53.4559C125.341 53.4559 130.463 48.241 130.463 41.8074C130.463 39.6833 129.903 37.6962 128.927 35.9807L124.366 39.8301L124.368 39.835Z" fill="#232629"></path>
+                              <path class="letter" d="M113.681 43.7872C113.462 43.1705 113.339 42.5049 113.339 41.8123C113.339 38.6163 115.884 36.0248 119.023 36.0248C120.08 36.0248 121.071 36.3209 121.919 36.8323L126.48 32.9829C124.478 31.2283 121.873 30.1663 119.025 30.1663C112.707 30.1663 107.586 35.3812 107.586 41.8148C107.586 43.9389 108.146 45.926 109.122 47.6415L113.683 43.7921L113.681 43.7872Z" fill="#232629"></path>
+                              <path class="letter" d="M144.324 30.1613C142.315 30.1613 140.426 30.6899 138.785 31.6174V23.3337L132.885 28.2746V41.8074C132.885 48.241 138.006 53.4559 144.324 53.4559C150.642 53.4559 155.764 48.241 155.764 41.8074C155.764 35.3738 150.642 30.1589 144.324 30.1589V30.1613ZM144.156 47.5974C141.017 47.5974 138.472 45.0058 138.472 41.8098C138.472 38.6138 141.017 36.0223 144.156 36.0223C147.294 36.0223 149.84 38.6138 149.84 41.8098C149.84 45.0058 147.294 47.5974 144.156 47.5974Z" fill="#232629"></path>
+                              <path class="letter" d="M74.5603 28.277V35.5769H63.6832V23.3337L57.7832 28.277V52.8318H63.6832V41.8196H74.5603V52.8318H80.4578V23.3337L74.5603 28.277Z" fill="#232629"></path>
+                              <path class="letter" d="M167.22 39.6218C165.509 38.8191 163.937 38.222 164.031 36.8174C164.093 35.8874 164.838 35.4592 165.288 35.3907C167.145 35.1044 168.917 36.6534 169.145 36.8639L172.896 33.6874C172.824 33.5724 170.7 30.1831 165.439 30.1831C160.678 30.1831 158.188 33.521 158.188 36.8149C158.188 41.2149 161.469 42.83 164.105 44.127C165.742 44.9322 167.155 45.6272 167.155 46.7602C167.155 47.6314 166.448 48.1331 165.439 48.1331C165.319 48.1331 163.062 48.2285 160.798 45.9575L156.958 49.2098C157.905 50.5288 159.191 51.4832 159.191 51.4832C160.688 52.6995 163.033 53.4556 165.317 53.4556C169.767 53.4556 172.997 50.6145 172.997 46.6966C172.997 42.3333 169.794 40.8283 167.217 39.6194L167.22 39.6218Z" fill="#232629"></path>
+                              <path d="M0 10.1704V16.7117C6.03695 16.7117 11.4899 19.2592 15.3784 23.3533L20.3266 19.1637C15.251 13.6283 8.02203 10.1704 0 10.1704Z" fill="white"></path>
+                              <path d="M5.43854 28.277V35.5768H0V41.8196H5.43854V52.8318H11.3361V23.3337L5.43854 28.277Z" fill="white"></path>
+                              <path d="M23.535 23.3875L18.541 27.6162C20.3579 30.8195 21.3985 34.5343 21.3985 38.4987C21.3985 50.5315 11.8192 60.2883 0 60.2883V66.8296C15.3639 66.8296 27.82 54.1459 27.82 38.5012C27.82 32.9461 26.2482 27.763 23.535 23.39V23.3875Z" fill="white"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_3001_3995">
+                                <rect width="173" height="77" fill="white"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></a></div>
+                      <div class="header__buttons"> 
+                        <button class="header__catalog">
+                          <div class="header__catalog-icon">
+                            <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <line x1="8" y1="4.75" x2="22" y2="4.75" stroke="white" stroke-width="1.5"></line>
+                              <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 5.5)" stroke="white" stroke-width="1.5"></line>
+                              <line x1="8" y1="12.75" x2="22" y2="12.75" stroke="white" stroke-width="1.5"></line>
+                              <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 13.5)" stroke="white" stroke-width="1.5"></line>
+                              <line x1="8" y1="20.75" x2="22" y2="20.75" stroke="white" stroke-width="1.5"></line>
+                              <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 21.5)" stroke="white" stroke-width="1.5"></line>
+                            </svg>
+                          </div>
+                          <div class="header__catalog-text text-22">Каталог</div>
+                        </button>
+                        <button class="header__search"> 
+                          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__col">
+                    <nav class="header__nav">
+                      <ul class="header__nav-list"> 
+                        <li class="header__item"><a class="header__nav-link" href="#"> 
+                            <div class="header__nav-text text-22">
+                               О компании</div></a></li>
+                        <li class="header__item">
+                          <div class="header__nav-link">
+                            <div class="header__nav-text text-22"> Обучение</div>
+                            <div class="header__nav-icon"> 
+                              <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="header__item">
+                          <div class="header__nav-link">
+                            <div class="header__nav-text text-22"> Поддержка</div>
+                            <div class="header__nav-icon"> 
+                              <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="header__item">
+                          <div class="header__nav-link">
+                            <div class="header__nav-text text-22"> Сотрудничество</div>
+                            <div class="header__nav-icon"> 
+                              <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="header__item"><a class="header__nav-link" href="#"> 
+                            <div class="header__nav-text text-22">
+                               Документация</div></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__mobile"> 
+              <div class="header__row">
+                <div class="header__col">
+                  <div class="header__logo"> <a class="header__logo-link" href="#"> 
+                      <svg width="173" height="77" viewbox="0 0 173 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3001_3995)">
+                          <path d="M37.8078 0H0V77H37.8078V0Z" fill="#00A84F"></path>
+                          <path class="letter" d="M88.9784 43.7872C88.7597 43.1705 88.6372 42.5049 88.6372 41.8123C88.6372 38.6163 91.1822 36.0248 94.3208 36.0248C95.3783 36.0248 96.3684 36.3209 97.2167 36.8323L101.778 32.9829C99.7762 31.2283 97.1711 30.1663 94.3232 30.1663C88.0051 30.1663 82.8838 35.3812 82.8838 41.8148C82.8838 43.9389 83.4437 45.926 84.4195 47.6415L88.9808 43.7921L88.9784 43.7872Z" fill="#232629"></path>
+                          <path class="letter" d="M99.6659 39.835C99.8846 40.4517 100.007 41.1173 100.007 41.8099C100.007 45.0059 97.4621 47.5974 94.3235 47.5974C93.2661 47.5974 92.2759 47.3013 91.4276 46.7898L86.8662 50.6392C88.8681 52.3938 91.4732 53.4559 94.3211 53.4559C100.639 53.4559 105.761 48.241 105.761 41.8074C105.761 39.6833 105.201 37.6962 104.225 35.9807L99.6635 39.8301L99.6659 39.835Z" fill="#232629"></path>
+                          <path class="letter" d="M124.368 39.835C124.587 40.4517 124.709 41.1173 124.709 41.8099C124.709 45.0059 122.164 47.5974 119.026 47.5974C117.968 47.5974 116.978 47.3013 116.13 46.7898L111.568 50.6392C113.57 52.3938 116.175 53.4559 119.023 53.4559C125.341 53.4559 130.463 48.241 130.463 41.8074C130.463 39.6833 129.903 37.6962 128.927 35.9807L124.366 39.8301L124.368 39.835Z" fill="#232629"></path>
+                          <path class="letter" d="M113.681 43.7872C113.462 43.1705 113.339 42.5049 113.339 41.8123C113.339 38.6163 115.884 36.0248 119.023 36.0248C120.08 36.0248 121.071 36.3209 121.919 36.8323L126.48 32.9829C124.478 31.2283 121.873 30.1663 119.025 30.1663C112.707 30.1663 107.586 35.3812 107.586 41.8148C107.586 43.9389 108.146 45.926 109.122 47.6415L113.683 43.7921L113.681 43.7872Z" fill="#232629"></path>
+                          <path class="letter" d="M144.324 30.1613C142.315 30.1613 140.426 30.6899 138.785 31.6174V23.3337L132.885 28.2746V41.8074C132.885 48.241 138.006 53.4559 144.324 53.4559C150.642 53.4559 155.764 48.241 155.764 41.8074C155.764 35.3738 150.642 30.1589 144.324 30.1589V30.1613ZM144.156 47.5974C141.017 47.5974 138.472 45.0058 138.472 41.8098C138.472 38.6138 141.017 36.0223 144.156 36.0223C147.294 36.0223 149.84 38.6138 149.84 41.8098C149.84 45.0058 147.294 47.5974 144.156 47.5974Z" fill="#232629"></path>
+                          <path class="letter" d="M74.5603 28.277V35.5769H63.6832V23.3337L57.7832 28.277V52.8318H63.6832V41.8196H74.5603V52.8318H80.4578V23.3337L74.5603 28.277Z" fill="#232629"></path>
+                          <path class="letter" d="M167.22 39.6218C165.509 38.8191 163.937 38.222 164.031 36.8174C164.093 35.8874 164.838 35.4592 165.288 35.3907C167.145 35.1044 168.917 36.6534 169.145 36.8639L172.896 33.6874C172.824 33.5724 170.7 30.1831 165.439 30.1831C160.678 30.1831 158.188 33.521 158.188 36.8149C158.188 41.2149 161.469 42.83 164.105 44.127C165.742 44.9322 167.155 45.6272 167.155 46.7602C167.155 47.6314 166.448 48.1331 165.439 48.1331C165.319 48.1331 163.062 48.2285 160.798 45.9575L156.958 49.2098C157.905 50.5288 159.191 51.4832 159.191 51.4832C160.688 52.6995 163.033 53.4556 165.317 53.4556C169.767 53.4556 172.997 50.6145 172.997 46.6966C172.997 42.3333 169.794 40.8283 167.217 39.6194L167.22 39.6218Z" fill="#232629"></path>
+                          <path d="M0 10.1704V16.7117C6.03695 16.7117 11.4899 19.2592 15.3784 23.3533L20.3266 19.1637C15.251 13.6283 8.02203 10.1704 0 10.1704Z" fill="white"></path>
+                          <path d="M5.43854 28.277V35.5768H0V41.8196H5.43854V52.8318H11.3361V23.3337L5.43854 28.277Z" fill="white"></path>
+                          <path d="M23.535 23.3875L18.541 27.6162C20.3579 30.8195 21.3985 34.5343 21.3985 38.4987C21.3985 50.5315 11.8192 60.2883 0 60.2883V66.8296C15.3639 66.8296 27.82 54.1459 27.82 38.5012C27.82 32.9461 26.2482 27.763 23.535 23.39V23.3875Z" fill="white"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_3001_3995">
+                            <rect width="173" height="77" fill="white"></rect>
+                          </clippath>
+                        </defs>
+                      </svg></a></div>
+                </div>
+                <div class="header__col">
+                  <div class="header__buttons"> 
+                    <button class="header__catalog">
+                      <div class="header__catalog-icon">
+                        <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line x1="8" y1="4.75" x2="22" y2="4.75" stroke="white" stroke-width="1.5"></line>
+                          <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 5.5)" stroke="white" stroke-width="1.5"></line>
+                          <line x1="8" y1="12.75" x2="22" y2="12.75" stroke="white" stroke-width="1.5"></line>
+                          <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 13.5)" stroke="white" stroke-width="1.5"></line>
+                          <line x1="8" y1="20.75" x2="22" y2="20.75" stroke="white" stroke-width="1.5"></line>
+                          <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 21.5)" stroke="white" stroke-width="1.5"></line>
+                        </svg>
+                      </div>
+                    </button>
+                    <button class="header__search"> 
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content" data-barba="container" data-barba-namespace="news">
+        <main class="news">
+          <section class="container content-container content-wrapper news__body">
+            <div class="breadcrumbs" data-horizontal-scroll="">
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="#">
+                     Главная</a></li>
+                <li class="breadcrumbs__item"> <span class="breadcrumbs__text">Новости</span></li>
+              </ul>
+            </div>
+            <h1 class="page-title title-80 news__title">Новости</h1>
+            <div class="news__controls">
+              <div class="news__categories">
+                <div class="nav">
+                  <div class="nav__list"> 
+                    <button class="nav__item active" data-tab-button="all">Все</button>
+                    <button class="nav__item" data-tab-button="new">Новинка</button>
+                    <button class="nav__item" data-tab-button="company-events">Мероприятия компании</button>
+                    <button class="nav__item" data-tab-button="price-change">Изменение цен</button>
+                  </div>
+                </div>
+              </div>
+              <div class="news__sort">
+                <div class="news__sort-label"><span class="news__sort-label-text text-22">Сортировать</span></div>
+                <div class="news__sort-select">
+                  <div class="select select-wrapper">
+                    <div class="select__button text-22">
+                      <input type="text" readonly="readonly" required="required" placeholder="За все время"/>
+                      <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                      </svg>
+                    </div>
+                    <div class="select__list">
+                      <ul>
+                        <li>
+                          <p>За все время</p>
+                        </li>
+                        <li>
+                          <p>За месяц</p>
+                        </li>
+                        <li>
+                          <p>За неделю</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="news__list">
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Новые видео на нашем <br>YouTube-канале</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-2.webp 1x" alt="news-2.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-2.jpg 1x" alt="news-2.jpg"/><img class="picture__img lazyload" data-src="images/news-2.jpg" alt="news-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Усиленные шаровые краны <br>Hoobs ORION</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-3.webp 1x" alt="news-3.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-3.jpg 1x" alt="news-3.jpg"/><img class="picture__img lazyload" data-src="images/news-3.jpg" alt="news-3.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Обновление рекламных материалов Hoobs</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-4.webp 1x" alt="news-4.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-4.jpg 1x" alt="news-4.jpg"/><img class="picture__img lazyload" data-src="images/news-4.jpg" alt="news-4.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Приглашаем на стенд Hoobs на выставке Aquatherm 2024</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-2.webp 1x" alt="news-2.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-2.jpg 1x" alt="news-2.jpg"/><img class="picture__img lazyload" data-src="images/news-2.jpg" alt="news-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Усиленные шаровые краны <br>Hoobs ORION</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Новые видео на нашем <br>YouTube-канале</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-4.webp 1x" alt="news-4.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-4.jpg 1x" alt="news-4.jpg"/><img class="picture__img lazyload" data-src="images/news-4.jpg" alt="news-4.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Приглашаем на стенд Hoobs на выставке Aquatherm 2024</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-3.webp 1x" alt="news-3.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-3.jpg 1x" alt="news-3.jpg"/><img class="picture__img lazyload" data-src="images/news-3.jpg" alt="news-3.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Обновление рекламных материалов Hoobs</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Новые видео на нашем <br>YouTube-канале</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-2.webp 1x" alt="news-2.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-2.jpg 1x" alt="news-2.jpg"/><img class="picture__img lazyload" data-src="images/news-2.jpg" alt="news-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Усиленные шаровые краны <br>Hoobs ORION</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-3.webp 1x" alt="news-3.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-3.jpg 1x" alt="news-3.jpg"/><img class="picture__img lazyload" data-src="images/news-3.jpg" alt="news-3.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Обновление рекламных материалов Hoobs</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-4.webp 1x" alt="news-4.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-4.jpg 1x" alt="news-4.jpg"/><img class="picture__img lazyload" data-src="images/news-4.jpg" alt="news-4.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Приглашаем на стенд Hoobs на выставке Aquatherm 2024</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-2.webp 1x" alt="news-2.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-2.jpg 1x" alt="news-2.jpg"/><img class="picture__img lazyload" data-src="images/news-2.jpg" alt="news-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Усиленные шаровые краны <br>Hoobs ORION</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Новые видео на нашем <br>YouTube-канале</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-4.webp 1x" alt="news-4.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-4.jpg 1x" alt="news-4.jpg"/><img class="picture__img lazyload" data-src="images/news-4.jpg" alt="news-4.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Приглашаем на стенд Hoobs на выставке Aquatherm 2024</h4></a>
+              </article>
+              <article class="news__list-item"><a class="news-card" href="#">
+                  <div class="news-card__image">
+                    <div class="news-card__date text-18">
+                       29 июля</div>
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/news-3.webp 1x" alt="news-3.jpg"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-3.jpg 1x" alt="news-3.jpg"/><img class="picture__img lazyload" data-src="images/news-3.jpg" alt="news-3.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="news-card__label text-18">
+                     Новинка</div>
+                  <h4 class="news-card__heading title-28">Обновление рекламных материалов Hoobs</h4></a>
+              </article>
+            </section><a class="button button_gray button-show-more news__show-more">
+              <div class="button__icon">
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </div>
+              <div class="button__text"> Показать еще</div></a>
+            <div class="subscribe news__subscribe">
+              <div class="subscribe__title">
+                <div class="subscribe__title-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none">
+                    <path d="M43.5062 123.046H138V17.9551H2.88281V43.5655" stroke="#7B7B7B" stroke-width="2"></path>
+                    <path d="M43.5059 44.4492L70.4409 65.644L97.376 44.4492" stroke="#7B7B7B" stroke-width="2"></path>
+                    <line x1="2" y1="96.4356" x2="43.5065" y2="96.4356" stroke="#00A84F" stroke-width="2"></line>
+                    <line x1="2" y1="69.9414" x2="23.1948" y2="69.9414" stroke="#00A84F" stroke-width="2"></line>
+                  </svg>
+                </div>
+                <p class="subscribe__title-text title-64">Подпишитесь и получайте свежие новости первыми</p>
+              </div>
+              <div class="subscribe__content">
+                <form class="subscribe__form" action="">
+                  <div class="subscribe__form-input">
+                    <div class="input-ui input-ui_white custom-placeholder custom-placeholder_white" data-input-parent="">
+                      <input data-input="" name="email" placeholder="E-mail"/>
+                      <div class="custom-placeholder__service"><span>E-mail</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button-icon button-icon--green subscribe__form-button">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                    </svg>
+                  </button>
+                </form>
+                <p class="subscribe__privacy policy">Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a class="inline-link" href="#">персональных данных</a> и соглашаетесь c <a class="inline-link" href="#">политикой конфиденциальности</a></p>
+              </div>
+              <div class="subscribe__decor"></div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__row"> 
+              <div class="footer__col">
+                <div class="footer__news">
+                  <div class="text-18 footer__news-label">
+                     Подписка на новости</div>
+                  <h4 class="title-28 footer__news-heading">Подпишитесь и получайте <br/> свежие новости первыми</h4>
+                  <form class="footer__news-form" action="/"> 
+                    <div class="footer__news-input">
+                      <div class="input-ui input-ui_white custom-placeholder custom-placeholder_white" data-input-parent="">
+                        <input data-input="" name="email" placeholder="E-mail" autocomplete="email" required="required"/>
+                        <div class="custom-placeholder__service"><span>E-mail</span>
+                          <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3001_895)">
+                              <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                              <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                              <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_3001_895">
+                                <rect width="24" height="24" fill="white"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="footer__news-btn">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </form>
+                  <div class="footer__news-policy"> 
+                    <div class="policy">
+                       Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a class="inline-link" href="#">персональных данных</a> и соглашаетесь c <a class="inline-link" href="#">политикой конфиденциальности</a></div>
+                  </div>
+                </div>
+                <div class="footer__socials">
+                  <div class="footer__socials-mails">
+                    <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="tel:8 800 350-23-80">
+                         8 800 350-23-80</a></div>
+                    <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="mailto:info@hoobs.ru">
+                         info@hoobs.ru</a></div>
+                  </div>
+                  <div class="footer__socials-inner"> 
+                    <div class="footer__socials-item"><a class="footer__socials-link" href="#"> 
+                        <div class="footer__socials-icon"> 
+                          <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#232629"></rect>
+                            <path d="M21 9.45167L18.7459 21.2192C18.7459 21.2192 18.4306 22.0351 17.5642 21.6438L12.3634 17.5144L12.3393 17.5023C13.0418 16.849 18.4893 11.777 18.7274 11.5471C19.0959 11.191 18.8671 10.979 18.4392 11.248L10.3926 16.5397L7.28823 15.4581C7.28823 15.4581 6.79969 15.2781 6.75269 14.8868C6.70508 14.4949 7.30431 14.2829 7.30431 14.2829L19.9599 9.14171C19.9599 9.14171 21 8.66845 21 9.45167Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="footer__socials-text text-18">Telegram</div></a></div>
+                    <div class="footer__socials-item"><a class="footer__socials-link" href="#"> 
+                        <div class="footer__socials-icon"> 
+                          <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#232629"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44687 20.2926C8.15267 20.2056 7.88424 20.0507 7.66422 19.8411C7.4442 19.6316 7.27905 19.3734 7.18271 19.0884C6.63219 17.6155 6.46907 11.4652 7.52933 10.2511C7.88221 9.85609 8.38042 9.61291 8.91583 9.57432C11.7602 9.27576 20.5481 9.31557 21.5574 9.67384C21.8413 9.76374 22.1006 9.91519 22.316 10.1168C22.5314 10.3185 22.6973 10.5651 22.8012 10.8382C23.4027 12.3609 23.423 17.8942 22.7196 19.3571C22.533 19.7379 22.2206 20.0464 21.8327 20.2329C20.7724 20.7504 9.85375 20.7405 8.44687 20.2926ZM12.9632 17.4065L18.0606 14.819L12.9632 12.2116V17.4065Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="footer__socials-text text-18">YouTube</div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__column">
+                  <nav class="footer__nav active" data-footer-list-wrapper="">
+                    <div class="footer__wrapper" data-footer-list-heading="">
+                      <div class="footer__heading text-18">Каталог
+                        <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="footer__list" data-footer-list-content="">
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__new">
+                             NEW</div>
+                          <div class="footer__text text-18">Новинки</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Трубы</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Фитинги</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Теплый пол</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Насосы и насосные станции</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Коллекторы</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Техника быстрого монтажа</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Водонагреватели</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Запорная арматура</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Радиаторная арматура</div></a></div>
+                      <div class="footer__item"><a class="footer__link" href="#"> 
+                          <div class="footer__text text-18">Дымоходы</div></a></div>
+                    </div>
+                  </nav>
+                </div>
+                <div class="footer__column">
+                  <div class="footer__grid">
+                    <nav class="footer__nav" data-footer-list-wrapper="">
+                      <div class="footer__wrapper" data-footer-list-heading="">
+                        <div class="footer__heading text-18">Компания
+                          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="footer__list" data-footer-list-content="">
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Где купить</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Прайс-лист</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">О компании</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Новости</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Контакты</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Документация</div></a></div>
+                      </div>
+                    </nav>
+                    <nav class="footer__nav" data-footer-list-wrapper="">
+                      <div class="footer__wrapper" data-footer-list-heading="">
+                        <div class="footer__heading text-18">Сотрудничество
+                          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="footer__list" data-footer-list-content="">
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Монтажникам</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Проектировщикам</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Торговым компаниям</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Строительным компаниям</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Маркетинговая поддержка</div></a></div>
+                      </div>
+                    </nav>
+                    <nav class="footer__nav" data-footer-list-wrapper="">
+                      <div class="footer__wrapper" data-footer-list-heading="">
+                        <div class="footer__heading text-18">Поддержка
+                          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="footer__list" data-footer-list-content="">
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Гарантия</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Сервисные центры</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Страховка</div></a></div>
+                      </div>
+                    </nav>
+                    <nav class="footer__nav" data-footer-list-wrapper="">
+                      <div class="footer__wrapper" data-footer-list-heading="">
+                        <div class="footer__heading text-18">Обучение
+                          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="footer__list" data-footer-list-content="">
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Семинары</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Вебинары</div></a></div>
+                        <div class="footer__item"><a class="footer__link" href="#"> 
+                            <div class="footer__text text-18">Самостоятельное обучение</div></a></div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bot">
+            <div class="footer__bot-col desktop">
+              <div class="footer__copy text-18">© 2024 Hoobs</div>
+            </div>
+            <div class="footer__bot-col">
+              <div class="footer__copy text-18 devices">© 2024 Hoobs</div>
+              <div class="footer__bot-item policy"><a class="footer__policy text-18" href="#">
+                   Политика конфиденциальности</a></div>
+              <div class="footer__bot-item">
+                <div class="footer__made">Сделано в <a href="https://cloudmill.ru/" target="_blank">
+                    <svg width="101" height="12" viewbox="0 0 101 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.7685 1.76659C13.7685 4.67324 13.1688 6.74216 11.982 7.91942C11.0776 8.81743 10.0971 8.90946 9.71954 8.90311L9.08807 8.92849L7.3745 6.86909C7.95202 6.4534 8.29789 5.76799 8.63107 5.10162C8.74214 4.88267 8.85005 4.66689 8.97381 4.44794L11.0015 0.503665H7.82197L6.61932 2.86451L6.39086 3.31829C6.10844 3.88311 5.68002 4.73987 5.39761 4.73987H3.01771V0.503665H0V11.4956H3.01771V7.25939H4.07123L7.64743 11.4956H11.1411H11.2934C11.4997 11.4956 16.3198 11.3972 16.7577 3.02001H20.1276V11.4956H23.1453V0.500488H13.7717V1.76659H13.7685Z" fill="#00A84F"></path>
+                      <path d="M91.5426 1.76464C91.5426 8.76471 88.8518 8.98049 88.8233 8.98049L88.8232 8.99953L88.8232 11.5H89.0643C89.2706 11.5 94.0907 11.4016 94.5286 3.0244H97.9017V11.5H100.919V0.504883H91.5458V1.76464H91.5426Z" fill="#00A84F"></path>
+                      <path d="M58.1234 0.504883H48.4071V1.76464C48.4071 8.74884 45.4433 8.98049 45.4116 8.98049L45.0371 8.99953L45.5893 11.5H59.3039V8.98049H58.1265V0.504883H58.1234ZM55.1057 8.98049H49.7207C50.6441 7.52717 51.1741 5.52805 51.3073 3.0244H55.1057V8.98049Z" fill="#00A84F"></path>
+                      <path d="M67.8712 6.65136L65.5643 0.504883H60.9727V11.4968H63.9904V4.3857L66.6558 11.4968H69.0833L71.752 4.3857V11.4968H74.7697V0.504883H70.1781L67.8712 6.65136Z" fill="#00A84F"></path>
+                      <path d="M79.7365 6.69896V0.504883H76.7188V11.4968H78.5021L84.6962 5.30275V11.4968H87.7139V0.504883H85.9337L79.7365 6.69896Z" fill="#00A84F"></path>
+                      <path d="M46.8335 0.504883H43.6159L40.887 7.95555L38.1136 0.504883H34.8643L37.8026 8.19988H40.7981L39.7541 11.0526L39.532 11.4968H42.7623L42.8385 11.2874C43.7111 8.91385 46.3639 1.68849 46.6622 0.936442L46.8335 0.504883Z" fill="#00A84F"></path>
+                      <path d="M32.5192 0.80634L32.4018 0.504883H27.7373L23.8754 11.0526L23.6533 11.4968H26.8836L27.5151 9.78013H32.6303L33.2618 11.4968H35.978H36.4921L36.2699 11.0526L32.5192 0.80634ZM30.0695 2.83718C30.4027 3.7352 30.8216 4.86802 31.269 6.08653H31.2658L31.6974 7.26062H28.4417L28.8732 6.08653H28.87C29.3206 4.86802 29.7395 3.73202 30.0695 2.83718Z" fill="#00A84F"></path>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
