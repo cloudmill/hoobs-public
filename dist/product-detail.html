@@ -17,6 +17,7 @@
     <div class="modal-block">
     </div>
     <div class="wrapper">
+      <div class="header__overlay" data-header-overlay="" data-close-header=""></div>
       <header class="header" data-header="">
         <div class="header__inner"> 
           <div class="container"> 
@@ -89,9 +90,9 @@
                             </defs>
                           </svg></a></div>
                       <div class="header__buttons"> 
-                        <button class="header__catalog">
+                        <button class="header__catalog" data-header-menu-btn="catalog-desktop">
                           <div class="header__catalog-icon">
-                            <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="closed" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <line x1="8" y1="4.75" x2="22" y2="4.75" stroke="white" stroke-width="1.5"></line>
                               <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 5.5)" stroke="white" stroke-width="1.5"></line>
                               <line x1="8" y1="12.75" x2="22" y2="12.75" stroke="white" stroke-width="1.5"></line>
@@ -99,10 +100,22 @@
                               <line x1="8" y1="20.75" x2="22" y2="20.75" stroke="white" stroke-width="1.5"></line>
                               <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 21.5)" stroke="white" stroke-width="1.5"></line>
                             </svg>
+                            <svg class="opened" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_3038_1807)">
+                                <path d="M5.63574 18.864L18.3637 6.13609" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M8.36315 8.8634L5.63574 6.13599" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M18.364 18.864L12 12.5" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                              </g>
+                              <defs>
+                                <clippath id="clip0_3038_1807">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                </clippath>
+                              </defs>
+                            </svg>
                           </div>
                           <div class="header__catalog-text text-22">Каталог</div>
                         </button>
-                        <button class="header__search"> 
+                        <button class="header__search" data-header-menu-btn="header-search">
                           <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
@@ -117,33 +130,33 @@
                         <li class="header__item"><a class="header__nav-link" href="#"> 
                             <div class="header__nav-text text-22">
                                О компании</div></a></li>
-                        <li class="header__item">
-                          <div class="header__nav-link">
-                            <div class="header__nav-text text-22"> Обучение</div>
-                            <div class="header__nav-icon"> 
+                        <li class="header__item" data-header-nav-wrapper="">
+                          <button class="header__nav-link" data-header-nav-btn="stydy"><span class="header__nav-text text-22"> Обучение</span><span class="header__nav-icon"> 
                               <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
-                              </svg>
+                              </svg></span></button>
+                          <div class="header__nav-drop" data-header-nav-drop="stydy">
+                            <div class="header__nav-drop-inner"><a class="header__nav-drop-link text-18" href="#">Семинары</a><a class="header__nav-drop-link text-18" href="#">Вебинары</a><a class="header__nav-drop-link text-18" href="#">Самостоятельное обучение</a>
                             </div>
                           </div>
                         </li>
-                        <li class="header__item">
-                          <div class="header__nav-link">
-                            <div class="header__nav-text text-22"> Поддержка</div>
-                            <div class="header__nav-icon"> 
+                        <li class="header__item" data-header-nav-wrapper="">
+                          <button class="header__nav-link" data-header-nav-btn="support"><span class="header__nav-text text-22"> Поддержка</span><span class="header__nav-icon"> 
                               <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
-                              </svg>
+                              </svg></span></button>
+                          <div class="header__nav-drop" data-header-nav-drop="support">
+                            <div class="header__nav-drop-inner"><a class="header__nav-drop-link text-18" href="#">Гарантия</a><a class="header__nav-drop-link text-18" href="#">Сервисные центры</a><a class="header__nav-drop-link text-18" href="#">Страховка</a>
                             </div>
                           </div>
                         </li>
-                        <li class="header__item">
-                          <div class="header__nav-link">
-                            <div class="header__nav-text text-22"> Сотрудничество</div>
-                            <div class="header__nav-icon"> 
+                        <li class="header__item" data-header-nav-wrapper="">
+                          <button class="header__nav-link" data-header-nav-btn="cooperation"><span class="header__nav-text text-22"> Сотрудничество</span><span class="header__nav-icon"> 
                               <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
-                              </svg>
+                              </svg></span></button>
+                          <div class="header__nav-drop" data-header-nav-drop="cooperation">
+                            <div class="header__nav-drop-inner"><a class="header__nav-drop-link text-18" href="#">Монтажникам</a><a class="header__nav-drop-link text-18" href="#">Проектировщикам</a><a class="header__nav-drop-link text-18" href="#">Торговым компаниям</a><a class="header__nav-drop-link text-18" href="#">Строительным компаниям</a><a class="header__nav-drop-link text-18" href="#">Маркетинговая поддержка</a>
                             </div>
                           </div>
                         </li>
@@ -183,9 +196,9 @@
                 </div>
                 <div class="header__col">
                   <div class="header__buttons"> 
-                    <button class="header__catalog">
+                    <button class="header__catalog" data-burger-menu-btn=""> 
                       <div class="header__catalog-icon">
-                        <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="closed" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <line x1="8" y1="4.75" x2="22" y2="4.75" stroke="white" stroke-width="1.5"></line>
                           <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 5.5)" stroke="white" stroke-width="1.5"></line>
                           <line x1="8" y1="12.75" x2="22" y2="12.75" stroke="white" stroke-width="1.5"></line>
@@ -193,9 +206,21 @@
                           <line x1="8" y1="20.75" x2="22" y2="20.75" stroke="white" stroke-width="1.5"></line>
                           <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 21.5)" stroke="white" stroke-width="1.5"></line>
                         </svg>
+                        <svg class="opened" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_3038_1807)">
+                            <path d="M5.63574 18.864L18.3637 6.13609" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M8.36315 8.8634L5.63574 6.13599" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M18.364 18.864L12 12.5" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_3038_1807">
+                              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg>
                       </div>
                     </button>
-                    <button class="header__search"> 
+                    <button class="header__search" data-header-menu-btn="header-search">
                       <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
@@ -205,6 +230,181 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="header-menu desktop" data-header-menu="catalog-desktop">
+          <div class="header-menu__menu-wrapper">
+            <div class="header-menu__menu"><a class="header-menu__menu-link new text-22" href="#"> 
+                <div class="header-menu__menu-new">NEW</div><span>Новинки</span></a>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="tubes"><span>Трубы</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="fitting"><span>Фитинги</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="warm-floor"><span>Теплый пол</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="pump"><span>Насосы и насосные станции</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="collectors"><span>Коллекторы</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="quick-installation"><span>Техника быстрого монтажа</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="water-heating"><span>Водонагреватели</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="valve"><span>Запорная арматура</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="radiator-fittings"><span>Радиаторная арматура</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="flues"><span>Дымоходы</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-menu__submenu-wrapper">
+            <div class="header-menu__submenu"> 
+              <div class="header-menu__submenu-item" data-header-submenu="tubes">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="fitting">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="warm-floor">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="pump">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="collectors">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="quick-installation">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="water-heating">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="valve">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="radiator-fittings">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="flues">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu__picture-wrapper">
+            <div class="header-menu__picture"> 
+              <div class="header-menu__picture-picture">
+                <picture class="picture">
+                  <source class="lazyload" type="image/webp" srcset="webp/header-image.webp 1x"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/header-image.jpg 1x"/><img class="picture__img lazyload" src="webp/header-image.webp" data-src="images/header-image.webp" alt="header-image.webp"/>
+                </picture>
+              </div>
+              <div class="header-menu__picture-catalog"> <a class="button button_gray wide" href="#" data-test-catalog="data-test-catalog">
+                  <div class="button__icon">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="button__text"> Весь каталог</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-search" data-header-menu="header-search">
+          <div class="header-search__inner"> 
+            <div class="header-search__title title-28">Поиск по сайту</div>
+            <div class="header-search__content">
+              <form class="header-search__form" action="" id="header-search-form">
+                <div class="header-search__form-input">
+                  <div class="input-ui custom-placeholder" data-input-parent="">
+                    <input data-input="" name="search-input" placeholder="Что вы хотите найти?" type="text" required="required"/>
+                    <div class="custom-placeholder__service"><span>Что вы хотите найти?</span>
+                      <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3001_895)">
+                          <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_3001_895">
+                            <rect width="24" height="24" fill="white"></rect>
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-search__form-button">
+                  <button class="button" type="submit" for="header-search-form"><span class="button__icon"><span class="loader"></span>
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                      </svg></span><span class="button__text"> Поиск</span></button>
+                </div>
+              </form>
+              <div class="header-search__close" data-close-header="">
+                <button class="button-icon">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3001_895)">
+                      <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_3001_895">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="burger-menu devices" data-burger-menu=""> 
+          <div class="burger-menu__inner title-80">.burger-menu  
+            <ul> 
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+            </ul>
           </div>
         </div>
       </header>
@@ -237,26 +437,26 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                         </picture>
                       </div>
                       <div class="swiper-slide">
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                         </picture>
                       </div>
                       <div class="swiper-slide">
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                         </picture>
                       </div>
                       <div class="swiper-slide">
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                         </picture>
                       </div>
                     </div>
@@ -272,26 +472,26 @@
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                             </picture>
                           </div>
                           <div class="swiper-slide">
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                             </picture>
                           </div>
                           <div class="swiper-slide">
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                             </picture>
                           </div>
                           <div class="swiper-slide">
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x" alt="product-hero-slide-0.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x" alt="product-hero-slide-0.jpg"/><img class="picture__img lazyload" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/product-hero-slide-0.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/product-hero-slide-0.jpg 1x"/><img class="picture__img lazyload" src="images/product-hero-slide-0.jpg" data-src="images/product-hero-slide-0.jpg" alt="product-hero-slide-0.jpg"/>
                             </picture>
                           </div>
                         </div>
@@ -501,89 +701,77 @@
                   </div>
                   <div data-tab-content="documentation">
                     <div class="product-detail__tabs-item wide">
-                      <div class="product-detail__tabs-grid"><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">Условия гарантийного обслуживания оборудования Hoobs Условия гарантийного обслуживания оборудования Hoobs </div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
+                      <div class="download-cards-grid columns-4"><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">Технический паспорт</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">Сертификат арматура Hoobs</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">Сертификат арматура Hoobs</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">Технический паспорт</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">Сертификат арматура Hoobs</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">Технический паспорт</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">Технический паспорт</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
-                            </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">Сертификат арматура Hoobs</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
-                            </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
-                            </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">Технический паспорт</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
-                            </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
-                            </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">Сертификат арматура Hoobs</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
-                            </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">Сертификат арматура Hoobs</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
                           </div></a>
                       </div>
@@ -591,27 +779,27 @@
                   </div>
                   <div data-tab-content="guarantee">
                     <div class="product-detail__tabs-item wide">
-                      <div class="product-detail__tabs-item">
-                        <div class="product-detail__tabs-grid">
-                          <div class="guarantee-card">
-                            <div class="guarantee-card__icon">
-                              <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="40" height="40" fill="#00A84F"></rect>
-                                <path d="M11 19.7778L17.1463 26L29 14" stroke="white" stroke-width="1.5"></path>
-                              </svg>
-                            </div>
-                            <div class="guarantee-card__title text-22">Мы гарантируем высокое качество своей продукции</div>
+                      <div class="product-detail__tabs-grid guarantee">
+                        <div class="guarantee-card">
+                          <div class="guarantee-card__icon">
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" fill="#00A84F"></rect>
+                              <path d="M11 19.7778L17.1463 26L29 14" stroke="white" stroke-width="1.5"></path>
+                            </svg>
                           </div>
-                          <div class="guarantee-card">
-                            <div class="guarantee-card__icon">
-                              <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="40" height="40" fill="#00A84F"></rect>
-                                <path d="M11 19.7778L17.1463 26L29 14" stroke="white" stroke-width="1.5"></path>
-                              </svg>
-                            </div>
-                            <div class="guarantee-card__title text-22">Гарантия на фитинги 5 лет</div>
+                          <div class="guarantee-card__title text-22">Мы гарантируем высокое качество своей продукции</div>
+                        </div>
+                        <div class="guarantee-card">
+                          <div class="guarantee-card__icon">
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" fill="#00A84F"></rect>
+                              <path d="M11 19.7778L17.1463 26L29 14" stroke="white" stroke-width="1.5"></path>
+                            </svg>
                           </div>
-                          <div class="insurance-card devices">
+                          <div class="guarantee-card__title text-22">Гарантия на фитинги 5 лет</div>
+                        </div>
+                        <div class="guarantee__insurance-card">
+                          <div class="insurance-card">
                             <div class="insurance-card__text">
                               <div class="insurance-card__title title-64">100 000 000 ₽ </div>
                               <div class="insurance-card__subtitle text-22">Общая страховая сумма всей продукции Hoobs</div>
@@ -629,7 +817,9 @@
                                 </defs>
                               </svg>
                             </div>
-                          </div><a class="download-card" href="#" download="download"> 
+                          </div>
+                        </div><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
                             <div class="download-card__title text-22">Условия гарантийного обслуживания оборудования Hoobs</div>
                             <div class="download-card__bottom"> 
                               <div class="download-card__icon">
@@ -638,12 +828,10 @@
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
                                 </svg>
                               </div>
-                              <div class="download-card__attr text-16"> 
-                                <p class="download-card__type">PDF </p>
-                                <p>–</p>
-                                <p class="download-card__weight">3,2 МБ</p>
-                              </div>
-                            </div></a><a class="download-card" href="#" download="download"> 
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
+                            </div>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
                             <div class="download-card__title text-22">Гарантийный талон Hoobs</div>
                             <div class="download-card__bottom"> 
                               <div class="download-card__icon">
@@ -652,78 +840,49 @@
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
                                 </svg>
                               </div>
-                              <div class="download-card__attr text-16"> 
-                                <p class="download-card__type">PDF </p>
-                                <p>–</p>
-                                <p class="download-card__weight">3,2 МБ</p>
-                              </div>
-                            </div></a>
-                        </div>
-                      </div>
-                      <div class="insurance-card desktop">
-                        <div class="insurance-card__text">
-                          <div class="insurance-card__title title-64">100 000 000 ₽ </div>
-                          <div class="insurance-card__subtitle text-22">Общая страховая сумма всей продукции Hoobs</div>
-                        </div>
-                        <div class="insurance-card__icon">
-                          <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M50 5C25.1472 5 5 25.1472 5 50V51.1V52.3198L6.19612 52.0806L28 47.7198L49 51.9198V64.6697L51 62.2614V51.9198L72 47.7198L93.8039 52.0806L95 52.3198V51.1V50C95 25.1472 74.8528 5 50 5ZM51 71.775L49 74.1833V83C49 88.5229 44.5229 93 39 93C33.4772 93 29 88.5229 29 83V76.95H27V83C27 89.6274 32.3726 95 39 95C45.6274 95 51 89.6274 51 83V71.775ZM71.8039 45.7194L50 50.0802L28.1961 45.7194L28 45.6802L27.8039 45.7194L7.00016 49.8802C7.06481 26.187 26.2917 7 50 7C73.7083 7 92.9352 26.187 92.9998 49.8802L72.1961 45.7194L72 45.6802L71.8039 45.7194Z" fill="white"></path>
-                            <g clip-path="url(#clip0_989_36243)">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M50 5C25.1472 5 5 25.1472 5 50V51.1V52.3198L6.19612 52.0806L28 47.7198L49 51.9198V64.6697L51 62.2614V51.9198L72 47.7198L93.8039 52.0806L95 52.3198V51.1V50C95 25.1472 74.8528 5 50 5ZM51 71.775L49 74.1833V83C49 88.5229 44.5229 93 39 93C33.4772 93 29 88.5229 29 83V76.95H27V83C27 89.6274 32.3726 95 39 95C45.6274 95 51 89.6274 51 83V71.775ZM71.8039 45.7194L50 50.0802L28.1961 45.7194L28 45.6802L27.8039 45.7194L7.00016 49.8802C7.06481 26.187 26.2917 7 50 7C73.7083 7 92.9352 26.187 92.9998 49.8802L72.1961 45.7194L72 45.6802L71.8039 45.7194Z" fill="#232629"></path>
-                            </g>
-                            <defs>
-                              <clippath id="clip0_989_36243">
-                                <rect width="90" height="23" fill="white" transform="translate(5 72)"></rect>
-                              </clippath>
-                            </defs>
-                          </svg>
-                        </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
+                            </div>
+                          </div></a>
                       </div>
                     </div>
                   </div>
                   <div data-tab-content="files">
                     <div class="product-detail__tabs-item wide">
-                      <div class="product-detail__tabs-grid"><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">BIM модель</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
+                      <div class="download-cards-grid columns-4"><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">BIM модель</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>PDF</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">BIM модель</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>DWG</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">BIM модель</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
-                            </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
-                            </div>
-                          </div></a><a class="download-card" href="#" download="download"> 
-                          <div class="download-card__title text-22">BIM модель</div>
-                          <div class="download-card__bottom"> 
-                            <div class="download-card__icon">
-                              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
-                              </svg>
-                            </div>
-                            <div class="download-card__attr text-16"> 
-                              <p class="download-card__type">PDF </p>
-                              <p>–</p>
-                              <p class="download-card__weight">3,2 МБ</p>
+                          </div></a><a class="download-card" href="#" download="">
+                          <div class="download-card__content">
+                            <div class="download-card__title text-22">BIM модель</div>
+                            <div class="download-card__bottom"> 
+                              <div class="download-card__icon">
+                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7298 2L12.7298 14.9555L16.3994 10.7214L17.5329 11.7038L13.2114 16.6901L12.9871 16.9489H12.6447H11.9798H11.315H10.9725L10.7482 16.6901L6.42676 11.7038L7.56029 10.7214L11.2298 14.9555L11.2298 2H12.7298Z" fill="#232629"></path>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 17V20.25H7V21.75H3H2.25V21V17H3.75ZM17 21.75H21H21.75V21V17H20.25V20.25H17V21.75Z" fill="#232629"></path>
+                                </svg>
+                              </div>
+                              <div class="download-card__attr text-16"> <span>STP</span><span>–</span><span>3,2 МБ</span></div>
                             </div>
                           </div></a>
                       </div>
@@ -731,25 +890,25 @@
                   </div>
                   <div data-tab-content="video">
                     <div class="product-detail__tabs-item wide">
-                      <div class="product-detail__tabs-grid video"><a class="video-card" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
+                      <div class="product-detail__tabs-grid video"><a class="video-card wide" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
                           <div class="video-card__preview"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/video-preview-0.webp 1x" alt="video-preview-0.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/video-preview-0.jpg 1x" alt="video-preview-0.jpg"/><img class="picture__img lazyload" data-src="images/video-preview-0.jpg" alt="video-preview-0.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/video-preview-0.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/video-preview-0.jpg 1x"/><img class="picture__img lazyload" src="images/video-preview-0.jpg" data-src="images/video-preview-0.jpg" alt="video-preview-0.jpg"/>
                             </picture>
                           </div>
-                          <div class="video-card__title text-22">Обзор от Hoobs: Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb Обзор от Hoobs: Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb Обзор от Hoobs: Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</div></a><a class="video-card" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
+                          <div class="video-card__title text-22">Обзор от Hoobs: Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb Обзор от Hoobs: Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb Обзор от Hoobs: Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</div></a><a class="video-card wide" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
                           <div class="video-card__preview"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/video-preview-1.webp 1x" alt="video-preview-1.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/video-preview-1.jpg 1x" alt="video-preview-1.jpg"/><img class="picture__img lazyload" data-src="images/video-preview-1.jpg" alt="video-preview-1.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/video-preview-1.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/video-preview-1.jpg 1x"/><img class="picture__img lazyload" src="images/video-preview-1.jpg" data-src="images/video-preview-1.jpg" alt="video-preview-1.jpg"/>
                             </picture>
                           </div>
-                          <div class="video-card__title text-22">Труба из сшитого полиэтилена Hoobs PE-Xa/EVOH: проверяем наружный слой</div></a><a class="video-card" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
+                          <div class="video-card__title text-22">Труба из сшитого полиэтилена Hoobs PE-Xa/EVOH: проверяем наружный слой</div></a><a class="video-card wide" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=4k9kuBzoIWY">
                           <div class="video-card__preview"> 
                             <picture class="picture">
-                              <source class="lazyload" type="image/webp" srcset="webp/video-preview-2.webp 1x" alt="video-preview-2.jpg"/>
-                              <source class="lazyload" type="image/jpeg" srcset="images/video-preview-2.jpg 1x" alt="video-preview-2.jpg"/><img class="picture__img lazyload" data-src="images/video-preview-2.jpg" alt="video-preview-2.jpg"/>
+                              <source class="lazyload" type="image/webp" srcset="webp/video-preview-2.webp 1x"/>
+                              <source class="lazyload" type="image/jpeg" srcset="images/video-preview-2.jpg 1x"/><img class="picture__img lazyload" src="images/video-preview-2.jpg" data-src="images/video-preview-2.jpg" alt="video-preview-2.jpg"/>
                             </picture>
                           </div>
                           <div class="video-card__title text-22">Циркуляционные насосы: обзор</div></a>
@@ -1012,8 +1171,8 @@
                           <div class="slider-product-card__top">
                             <figure class="slider-product-card__figure">
                               <picture class="picture">
-                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-0.webp 1x" alt="products-slider-img-0.webp"/>
-                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-0.jpg 1x" alt="products-slider-img-0.webp"/><img class="picture__img lazyload" data-src="images/products-slider-img-0.webp" alt="products-slider-img-0.webp"/>
+                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-0.webp 1x"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-0.jpg 1x"/><img class="picture__img lazyload" src="webp/products-slider-img-0.webp" data-src="images/products-slider-img-0.webp" alt="products-slider-img-0.webp"/>
                               </picture>
                               <figcaption class="text-18">Артикул: HB-7E0075N040400A</figcaption>
                             </figure>
@@ -1077,8 +1236,8 @@
                           <div class="slider-product-card__top">
                             <figure class="slider-product-card__figure">
                               <picture class="picture">
-                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-1.webp 1x" alt="products-slider-img-1.webp"/>
-                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-1.jpg 1x" alt="products-slider-img-1.webp"/><img class="picture__img lazyload" data-src="images/products-slider-img-1.webp" alt="products-slider-img-1.webp"/>
+                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-1.webp 1x"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-1.jpg 1x"/><img class="picture__img lazyload" src="webp/products-slider-img-1.webp" data-src="images/products-slider-img-1.webp" alt="products-slider-img-1.webp"/>
                               </picture>
                               <figcaption class="text-18">Артикул: HB-7E0075N040400A</figcaption>
                             </figure>
@@ -1138,8 +1297,8 @@
                           <div class="slider-product-card__top">
                             <figure class="slider-product-card__figure">
                               <picture class="picture">
-                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-2.webp 1x" alt="products-slider-img-2.webp"/>
-                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-2.jpg 1x" alt="products-slider-img-2.webp"/><img class="picture__img lazyload" data-src="images/products-slider-img-2.webp" alt="products-slider-img-2.webp"/>
+                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-2.webp 1x"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-2.jpg 1x"/><img class="picture__img lazyload" src="webp/products-slider-img-2.webp" data-src="images/products-slider-img-2.webp" alt="products-slider-img-2.webp"/>
                               </picture>
                               <figcaption class="text-18">Артикул: HB-7E0075N040400A</figcaption>
                             </figure>
@@ -1199,8 +1358,8 @@
                           <div class="slider-product-card__top">
                             <figure class="slider-product-card__figure">
                               <picture class="picture">
-                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-3.webp 1x" alt="products-slider-img-3.webp"/>
-                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-3.jpg 1x" alt="products-slider-img-3.webp"/><img class="picture__img lazyload" data-src="images/products-slider-img-3.webp" alt="products-slider-img-3.webp"/>
+                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-3.webp 1x"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-3.jpg 1x"/><img class="picture__img lazyload" src="webp/products-slider-img-3.webp" data-src="images/products-slider-img-3.webp" alt="products-slider-img-3.webp"/>
                               </picture>
                               <figcaption class="text-18">Артикул: HB-7E0075N040400A</figcaption>
                             </figure>
@@ -1260,8 +1419,8 @@
                           <div class="slider-product-card__top">
                             <figure class="slider-product-card__figure">
                               <picture class="picture">
-                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-0.webp 1x" alt="products-slider-img-0.webp"/>
-                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-0.jpg 1x" alt="products-slider-img-0.webp"/><img class="picture__img lazyload" data-src="images/products-slider-img-0.webp" alt="products-slider-img-0.webp"/>
+                                <source class="lazyload" type="image/webp" srcset="webp/products-slider-img-0.webp 1x"/>
+                                <source class="lazyload" type="image/jpeg" srcset="images/products-slider-img-0.jpg 1x"/><img class="picture__img lazyload" src="webp/products-slider-img-0.webp" data-src="images/products-slider-img-0.webp" alt="products-slider-img-0.webp"/>
                               </picture>
                               <figcaption class="text-18">Артикул: HB-7E0075N040400A</figcaption>
                             </figure>
@@ -1324,9 +1483,8 @@
               <div class="container">
                 <div class="features-block">
                   <div class="features-block">
-                    <div class="features-block__grid"> 
-                      <div class="feature-card">
-                        <div class="feature-card__icon"> 
+                    <div class="features-block__grid"> <a class="feature-card" href="#">
+                        <div class="feature-card__icon">
                           <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.1902 9.10519C42.6651 2.18672 57.9988 2.30765 70.3567 9.42195C82.5931 16.6811 89.2856 28.3793 89.9608 43.5732C90.6683 59.4978 81.7014 70.4327 71.7333 80.4935C65.9799 86.3264 57.5438 91.6227 50.5564 96H49.9996C39.3319 89.4228 27.9732 81.0273 20.3735 71.2173C14.0144 63.0285 9.62259 54.5936 10.0256 42.881C10.5477 27.7077 17.7153 16.0237 30.1902 9.10519Z" stroke="#232629" stroke-width="2"></path>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M46.688 54.4385C47.7246 54.8022 48.8392 55 50 55C55.5228 55 60 50.5228 60 45C60 43.1833 59.5156 41.4798 58.6688 40.0115L57.2816 41.682C57.7429 42.6928 58 43.8164 58 45C58 49.4183 54.4183 53 50 53C49.3367 53 48.6923 52.9193 48.076 52.7671L46.688 54.4385ZM43.1677 49.164L41.8327 50.7716C40.6784 49.1411 40 47.1498 40 45C40 39.4772 44.4772 35 50 35C51.49 35 52.9039 35.3259 54.1742 35.9102L52.8388 37.5183C51.9566 37.1834 50.9997 37 50 37C45.5817 37 42 40.5817 42 45C42 46.5254 42.4269 47.951 43.1677 49.164Z" fill="#00A84F"></path>
@@ -1334,20 +1492,15 @@
                         </div>
                         <div class="feature-card__bot"> 
                           <h3 class="title-40 feature-card__heading">Где купить?</h3>
-                          <p class="text-22 feature-card__text">Найдите нас в ближайшем офлайн магазине. <br class="desktop"/>Вы сможете лично оценить качество наших товаров и получить консультацию. <br class="desktop"/>
-                          </p>
-                          <div class="feature-card__link"> <a class="button" href="#">
-                              <div class="button__icon">
+                          <p class="text-22 feature-card__text">Найдите нас в ближайшем офлайн магазине. <br>Вы сможете лично оценить качество наших товаров и получить консультацию.</p>
+                          <div class="feature-card__link"> 
+                            <div class="button"><span class="button__icon">
                                 <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                                </svg>
-                              </div>
-                              <div class="button__text"> Подробнее</div></a>
+                                </svg></span><span class="button__text"> Подробнее</span></div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="feature-card">
-                        <div class="feature-card__icon"> 
+                        </div></a><a class="feature-card" href="#">
+                        <div class="feature-card__icon">
                           <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M79.9336 5H13V62.494C13 64.9189 13.488 67.2758 14.3956 69.4437L12.9733 71.1564C11.6944 68.4957 11 65.5432 11 62.494V5V3H13H81.5945L79.9336 5ZM86 10.869V62.494C86 68.8033 82.6966 74.652 77.2933 77.9094L49.5 94.6647L21.7067 77.9094C20.9501 77.4533 20.2347 76.9463 19.5637 76.3944L18.2859 77.9331C19.0335 78.5486 19.8308 79.1138 20.6742 79.6222L49.5 97L78.3258 79.6222C84.3296 76.0029 88 69.5043 88 62.494V8.46064L86 10.869Z" fill="#232629"></path>
                             <rect x="36" y="26" width="28" height="28" stroke="#00A84F" stroke-width="2"></rect>
@@ -1356,20 +1509,15 @@
                         </div>
                         <div class="feature-card__bot"> 
                           <h3 class="title-40 feature-card__heading">Гарантия</h3>
-                          <p class="text-22 feature-card__text">Гарантия качества нашего товара. <br class="desktop"/>Получите подробную информацию о гарантии на все товары. <br class="desktop"/>
-                          </p>
-                          <div class="feature-card__link"> <a class="button" href="#">
-                              <div class="button__icon">
+                          <p class="text-22 feature-card__text">Гарантия качества нашего товара. <br>Получите подробную информацию о гарантии на все товары.</p>
+                          <div class="feature-card__link"> 
+                            <div class="button"><span class="button__icon">
                                 <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                                </svg>
-                              </div>
-                              <div class="button__text"> Подробнее</div></a>
+                                </svg></span><span class="button__text"> Подробнее</span></div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="feature-card">
-                        <div class="feature-card__icon"> 
+                        </div></a><a class="feature-card" href="#">
+                        <div class="feature-card__icon">
                           <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M50 5C25.1472 5 5 25.1472 5 50V51.1V52.3198L6.19612 52.0806L28 47.7198L49 51.9198V64.6697L51 62.2614V51.9198L72 47.7198L93.8039 52.0806L95 52.3198V51.1V50C95 25.1472 74.8528 5 50 5ZM51 71.775L49 74.1833V83C49 88.5229 44.5229 93 39 93C33.4772 93 29 88.5229 29 83V76.95H27V83C27 89.6274 32.3726 95 39 95C45.6274 95 51 89.6274 51 83V71.775ZM71.8039 45.7194L50 50.0802L28.1961 45.7194L28 45.6802L27.8039 45.7194L7.00016 49.8802C7.06481 26.187 26.2917 7 50 7C73.7083 7 92.9352 26.187 92.9998 49.8802L72.1961 45.7194L72 45.6802L71.8039 45.7194Z" fill="#232629"></path>
                             <g clip-path="url(#clip0_3002_2952)">
@@ -1384,18 +1532,14 @@
                         </div>
                         <div class="feature-card__bot"> 
                           <h3 class="title-40 feature-card__heading">Страховка</h3>
-                          <p class="text-22 feature-card__text">Мы предлагаем надежную страховку. <br class="desktop"/>Получите подробную информацию о страховке на все товары. <br class="desktop"/>
-                          </p>
-                          <div class="feature-card__link"> <a class="button" href="#">
-                              <div class="button__icon">
+                          <p class="text-22 feature-card__text">Мы предлагаем надежную страховку. <br>Получите подробную информацию о страховке на все товары.</p>
+                          <div class="feature-card__link"> 
+                            <div class="button"><span class="button__icon">
                                 <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                                </svg>
-                              </div>
-                              <div class="button__text"> Подробнее</div></a>
+                                </svg></span><span class="button__text"> Подробнее</span></div>
                           </div>
-                        </div>
-                      </div>
+                        </div></a>
                     </div>
                   </div>
                 </div>
@@ -1433,7 +1577,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="footer__news-btn">
+                    <button class="button-small"><span class="loader"></span>
                       <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
                       </svg>
@@ -1446,13 +1590,13 @@
                 </div>
                 <div class="footer__socials">
                   <div class="footer__socials-mails">
-                    <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="tel:8 800 350-23-80">
+                    <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="tel:88003502380">
                          8 800 350-23-80</a></div>
                     <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="mailto:info@hoobs.ru">
                          info@hoobs.ru</a></div>
                   </div>
                   <div class="footer__socials-inner"> 
-                    <div class="footer__socials-item"><a class="footer__socials-link" href="#"> 
+                    <div class="footer__socials-item"><a class="footer__socials-link" href="https://t.me/hoobs_russia"> 
                         <div class="footer__socials-icon"> 
                           <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="30" rx="15" fill="#232629"></rect>
@@ -1460,7 +1604,7 @@
                           </svg>
                         </div>
                         <div class="footer__socials-text text-18">Telegram</div></a></div>
-                    <div class="footer__socials-item"><a class="footer__socials-link" href="#"> 
+                    <div class="footer__socials-item"><a class="footer__socials-link" href="https://www.youtube.com/@hoobs_Russia/"> 
                         <div class="footer__socials-icon"> 
                           <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="30" rx="15" fill="#232629"></rect>

@@ -17,6 +17,7 @@
     <div class="modal-block">
     </div>
     <div class="wrapper">
+      <div class="header__overlay" data-header-overlay="" data-close-header=""></div>
       <header class="header header_black" data-header="">
         <div class="header__inner"> 
           <div class="container"> 
@@ -89,9 +90,9 @@
                             </defs>
                           </svg></a></div>
                       <div class="header__buttons"> 
-                        <button class="header__catalog">
+                        <button class="header__catalog" data-header-menu-btn="catalog-desktop">
                           <div class="header__catalog-icon">
-                            <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="closed" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <line x1="8" y1="4.75" x2="22" y2="4.75" stroke="white" stroke-width="1.5"></line>
                               <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 5.5)" stroke="white" stroke-width="1.5"></line>
                               <line x1="8" y1="12.75" x2="22" y2="12.75" stroke="white" stroke-width="1.5"></line>
@@ -99,10 +100,22 @@
                               <line x1="8" y1="20.75" x2="22" y2="20.75" stroke="white" stroke-width="1.5"></line>
                               <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 21.5)" stroke="white" stroke-width="1.5"></line>
                             </svg>
+                            <svg class="opened" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_3038_1807)">
+                                <path d="M5.63574 18.864L18.3637 6.13609" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M8.36315 8.8634L5.63574 6.13599" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M18.364 18.864L12 12.5" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                              </g>
+                              <defs>
+                                <clippath id="clip0_3038_1807">
+                                  <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                </clippath>
+                              </defs>
+                            </svg>
                           </div>
                           <div class="header__catalog-text text-22">Каталог</div>
                         </button>
-                        <button class="header__search"> 
+                        <button class="header__search" data-header-menu-btn="header-search">
                           <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
@@ -117,33 +130,33 @@
                         <li class="header__item"><a class="header__nav-link" href="#"> 
                             <div class="header__nav-text text-22">
                                О компании</div></a></li>
-                        <li class="header__item">
-                          <div class="header__nav-link">
-                            <div class="header__nav-text text-22"> Обучение</div>
-                            <div class="header__nav-icon"> 
+                        <li class="header__item" data-header-nav-wrapper="">
+                          <button class="header__nav-link" data-header-nav-btn="stydy"><span class="header__nav-text text-22"> Обучение</span><span class="header__nav-icon"> 
                               <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
-                              </svg>
+                              </svg></span></button>
+                          <div class="header__nav-drop" data-header-nav-drop="stydy">
+                            <div class="header__nav-drop-inner"><a class="header__nav-drop-link text-18" href="#">Семинары</a><a class="header__nav-drop-link text-18" href="#">Вебинары</a><a class="header__nav-drop-link text-18" href="#">Самостоятельное обучение</a>
                             </div>
                           </div>
                         </li>
-                        <li class="header__item">
-                          <div class="header__nav-link">
-                            <div class="header__nav-text text-22"> Поддержка</div>
-                            <div class="header__nav-icon"> 
+                        <li class="header__item" data-header-nav-wrapper="">
+                          <button class="header__nav-link" data-header-nav-btn="support"><span class="header__nav-text text-22"> Поддержка</span><span class="header__nav-icon"> 
                               <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
-                              </svg>
+                              </svg></span></button>
+                          <div class="header__nav-drop" data-header-nav-drop="support">
+                            <div class="header__nav-drop-inner"><a class="header__nav-drop-link text-18" href="#">Гарантия</a><a class="header__nav-drop-link text-18" href="#">Сервисные центры</a><a class="header__nav-drop-link text-18" href="#">Страховка</a>
                             </div>
                           </div>
                         </li>
-                        <li class="header__item">
-                          <div class="header__nav-link">
-                            <div class="header__nav-text text-22"> Сотрудничество</div>
-                            <div class="header__nav-icon"> 
+                        <li class="header__item" data-header-nav-wrapper="">
+                          <button class="header__nav-link" data-header-nav-btn="cooperation"><span class="header__nav-text text-22"> Сотрудничество</span><span class="header__nav-icon"> 
                               <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
-                              </svg>
+                              </svg></span></button>
+                          <div class="header__nav-drop" data-header-nav-drop="cooperation">
+                            <div class="header__nav-drop-inner"><a class="header__nav-drop-link text-18" href="#">Монтажникам</a><a class="header__nav-drop-link text-18" href="#">Проектировщикам</a><a class="header__nav-drop-link text-18" href="#">Торговым компаниям</a><a class="header__nav-drop-link text-18" href="#">Строительным компаниям</a><a class="header__nav-drop-link text-18" href="#">Маркетинговая поддержка</a>
                             </div>
                           </div>
                         </li>
@@ -183,9 +196,9 @@
                 </div>
                 <div class="header__col">
                   <div class="header__buttons"> 
-                    <button class="header__catalog">
+                    <button class="header__catalog" data-burger-menu-btn=""> 
                       <div class="header__catalog-icon">
-                        <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="closed" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <line x1="8" y1="4.75" x2="22" y2="4.75" stroke="white" stroke-width="1.5"></line>
                           <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 5.5)" stroke="white" stroke-width="1.5"></line>
                           <line x1="8" y1="12.75" x2="22" y2="12.75" stroke="white" stroke-width="1.5"></line>
@@ -193,9 +206,21 @@
                           <line x1="8" y1="20.75" x2="22" y2="20.75" stroke="white" stroke-width="1.5"></line>
                           <line y1="-0.75" x2="3" y2="-0.75" transform="matrix(-1 0 0 1 5 21.5)" stroke="white" stroke-width="1.5"></line>
                         </svg>
+                        <svg class="opened" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_3038_1807)">
+                            <path d="M5.63574 18.864L18.3637 6.13609" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M8.36315 8.8634L5.63574 6.13599" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M18.364 18.864L12 12.5" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_3038_1807">
+                              <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg>
                       </div>
                     </button>
-                    <button class="header__search"> 
+                    <button class="header__search" data-header-menu-btn="header-search">
                       <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
@@ -205,6 +230,181 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="header-menu desktop" data-header-menu="catalog-desktop">
+          <div class="header-menu__menu-wrapper">
+            <div class="header-menu__menu"><a class="header-menu__menu-link new text-22" href="#"> 
+                <div class="header-menu__menu-new">NEW</div><span>Новинки</span></a>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="tubes"><span>Трубы</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="fitting"><span>Фитинги</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="warm-floor"><span>Теплый пол</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="pump"><span>Насосы и насосные станции</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="collectors"><span>Коллекторы</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="quick-installation"><span>Техника быстрого монтажа</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="water-heating"><span>Водонагреватели</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="valve"><span>Запорная арматура</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="radiator-fittings"><span>Радиаторная арматура</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+              <button class="header-menu__menu-link text-22" data-header-menu-btn="flues"><span>Дымоходы</span>
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6564 17.8665L4.15979 9.43512L5.34798 8.51959L11.6194 16.6588H12.8806L19.152 8.51959L20.3402 9.43512L13.8436 17.8665L13.6184 18.1588H13.2495H11.2505H10.8816L10.6564 17.8665Z" fill="#232629"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-menu__submenu-wrapper">
+            <div class="header-menu__submenu"> 
+              <div class="header-menu__submenu-item" data-header-submenu="tubes">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="fitting">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="warm-floor">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="pump">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="collectors">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="quick-installation">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="water-heating">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="valve">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="radiator-fittings">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+              <div class="header-menu__submenu-item" data-header-submenu="flues">
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu__picture-wrapper">
+            <div class="header-menu__picture"> 
+              <div class="header-menu__picture-picture">
+                <picture class="picture">
+                  <source class="lazyload" type="image/webp" srcset="webp/header-image.webp 1x"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/header-image.jpg 1x"/><img class="picture__img lazyload" src="webp/header-image.webp" data-src="images/header-image.webp" alt="header-image.webp"/>
+                </picture>
+              </div>
+              <div class="header-menu__picture-catalog"> <a class="button button_gray wide" href="#" data-test-catalog="data-test-catalog">
+                  <div class="button__icon">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="button__text"> Весь каталог</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-search" data-header-menu="header-search">
+          <div class="header-search__inner"> 
+            <div class="header-search__title title-28">Поиск по сайту</div>
+            <div class="header-search__content">
+              <form class="header-search__form" action="" id="header-search-form">
+                <div class="header-search__form-input">
+                  <div class="input-ui custom-placeholder" data-input-parent="">
+                    <input data-input="" name="search-input" placeholder="Что вы хотите найти?" type="text" required="required"/>
+                    <div class="custom-placeholder__service"><span>Что вы хотите найти?</span>
+                      <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3001_895)">
+                          <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_3001_895">
+                            <rect width="24" height="24" fill="white"></rect>
+                          </clippath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-search__form-button">
+                  <button class="button" type="submit" for="header-search-form"><span class="button__icon"><span class="loader"></span>
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                      </svg></span><span class="button__text"> Поиск</span></button>
+                </div>
+              </form>
+              <div class="header-search__close" data-close-header="">
+                <button class="button-icon">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3001_895)">
+                      <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0_3001_895">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="burger-menu devices" data-burger-menu=""> 
+          <div class="burger-menu__inner title-80">.burger-menu  
+            <ul> 
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+              <li>test</li>
+            </ul>
           </div>
         </div>
       </header>
@@ -218,8 +418,8 @@
                     <div class="main-page__intro-slide container"> 
                       <div class="main-page__intro-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x"/><img class="picture__img lazyload" src="images/main-slide-1.jpg" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                         </picture>
                       </div>
                       <div class="main-page__intro-row"> 
@@ -244,8 +444,8 @@
                     <div class="main-page__intro-slide container"> 
                       <div class="main-page__intro-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x"/><img class="picture__img lazyload" src="images/main-slide-1.jpg" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                         </picture>
                       </div>
                       <div class="main-page__intro-row"> 
@@ -270,8 +470,8 @@
                     <div class="main-page__intro-slide container"> 
                       <div class="main-page__intro-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x"/><img class="picture__img lazyload" src="images/main-slide-1.jpg" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                         </picture>
                       </div>
                       <div class="main-page__intro-row"> 
@@ -296,8 +496,8 @@
                     <div class="main-page__intro-slide container"> 
                       <div class="main-page__intro-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x" alt="main-slide-1.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x" alt="main-slide-1.jpg"/><img class="picture__img lazyload" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/main-slide-1.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/main-slide-1.jpg 1x"/><img class="picture__img lazyload" src="images/main-slide-1.jpg" data-src="images/main-slide-1.jpg" alt="main-slide-1.jpg"/>
                         </picture>
                       </div>
                       <div class="main-page__intro-row"> 
@@ -384,8 +584,8 @@
                   <div class="main-page__products-grid"> <a class="main-page__products-card big" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-1.webp 1x" alt="products-1.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-1.jpg 1x" alt="products-1.jpg"/><img class="picture__img lazyload" data-src="images/products-1.jpg" alt="products-1.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-1.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-1.jpg 1x"/><img class="picture__img lazyload" src="images/products-1.jpg" data-src="images/products-1.jpg" alt="products-1.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Трубы</h3>
@@ -396,8 +596,8 @@
                       </div></a><a class="main-page__products-card" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-2.webp 1x" alt="products-2.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-2.jpg 1x" alt="products-2.jpg"/><img class="picture__img lazyload" data-src="images/products-2.jpg" alt="products-2.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-2.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-2.jpg 1x"/><img class="picture__img lazyload" src="images/products-2.jpg" data-src="images/products-2.jpg" alt="products-2.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Фитинги</h3>
@@ -408,8 +608,8 @@
                       </div></a><a class="main-page__products-card" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-3.webp 1x" alt="products-3.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-3.jpg 1x" alt="products-3.jpg"/><img class="picture__img lazyload" data-src="images/products-3.jpg" alt="products-3.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-3.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-3.jpg 1x"/><img class="picture__img lazyload" src="images/products-3.jpg" data-src="images/products-3.jpg" alt="products-3.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Теплый пол</h3>
@@ -420,8 +620,8 @@
                       </div></a><a class="main-page__products-card big" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-4.webp 1x" alt="products-4.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-4.jpg 1x" alt="products-4.jpg"/><img class="picture__img lazyload" data-src="images/products-4.jpg" alt="products-4.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-4.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-4.jpg 1x"/><img class="picture__img lazyload" src="images/products-4.jpg" data-src="images/products-4.jpg" alt="products-4.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Насосы и насосные станции</h3>
@@ -432,8 +632,8 @@
                       </div></a><a class="main-page__products-card" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-5.webp 1x" alt="products-5.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-5.jpg 1x" alt="products-5.jpg"/><img class="picture__img lazyload" data-src="images/products-5.jpg" alt="products-5.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-5.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-5.jpg 1x"/><img class="picture__img lazyload" src="images/products-5.jpg" data-src="images/products-5.jpg" alt="products-5.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Коллекторы</h3>
@@ -444,8 +644,8 @@
                       </div></a><a class="main-page__products-card" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-6.webp 1x" alt="products-6.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-6.jpg 1x" alt="products-6.jpg"/><img class="picture__img lazyload" data-src="images/products-6.jpg" alt="products-6.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-6.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-6.jpg 1x"/><img class="picture__img lazyload" src="images/products-6.jpg" data-src="images/products-6.jpg" alt="products-6.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Техника быстрого монтажа</h3>
@@ -456,8 +656,8 @@
                       </div></a><a class="main-page__products-card big" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-7.webp 1x" alt="products-7.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-7.jpg 1x" alt="products-7.jpg"/><img class="picture__img lazyload" data-src="images/products-7.jpg" alt="products-7.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-7.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-7.jpg 1x"/><img class="picture__img lazyload" src="images/products-7.jpg" data-src="images/products-7.jpg" alt="products-7.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Водонагреватели</h3>
@@ -468,8 +668,8 @@
                       </div></a><a class="main-page__products-card big" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-8.webp 1x" alt="products-8.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-8.jpg 1x" alt="products-8.jpg"/><img class="picture__img lazyload" data-src="images/products-8.jpg" alt="products-8.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-8.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-8.jpg 1x"/><img class="picture__img lazyload" src="images/products-8.jpg" data-src="images/products-8.jpg" alt="products-8.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Запорная арматура</h3>
@@ -480,8 +680,8 @@
                       </div></a><a class="main-page__products-card" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-9.webp 1x" alt="products-9.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-9.jpg 1x" alt="products-9.jpg"/><img class="picture__img lazyload" data-src="images/products-9.jpg" alt="products-9.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-9.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-9.jpg 1x"/><img class="picture__img lazyload" src="images/products-9.jpg" data-src="images/products-9.jpg" alt="products-9.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Радиаторная арматура</h3>
@@ -492,8 +692,8 @@
                       </div></a><a class="main-page__products-card" href="#">
                       <div class="main-page__products-img"> 
                         <picture class="picture">
-                          <source class="lazyload" type="image/webp" srcset="webp/products-10.webp 1x" alt="products-10.jpg"/>
-                          <source class="lazyload" type="image/jpeg" srcset="images/products-10.jpg 1x" alt="products-10.jpg"/><img class="picture__img lazyload" data-src="images/products-10.jpg" alt="products-10.jpg"/>
+                          <source class="lazyload" type="image/webp" srcset="webp/products-10.webp 1x"/>
+                          <source class="lazyload" type="image/jpeg" srcset="images/products-10.jpg 1x"/><img class="picture__img lazyload" src="images/products-10.jpg" data-src="images/products-10.jpg" alt="products-10.jpg"/>
                         </picture>
                       </div>
                       <h3 class="title-40 main-page__products-heading"> Дымоходы</h3>
@@ -511,96 +711,74 @@
             <div class="container">
               <div class="features-block">
                 <h2 class="title-80 features-block__title"> Поддержка</h2>
-                <div class="features-block__grid"> 
-                  <div class="feature-card">
-                    <div class="feature-card__icon"> 
+                <div class="features-block__grid"> <a class="feature-card" href="#">
+                    <div class="feature-card__icon">
                       <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 23.4634H93V83.1219H10.7643L9.1034 85.1219H93H95V83.1219V23.4634V21.4634H93H7H5V23.4634V80.5495L7 78.1412V23.4634Z" fill="#232629"></path>
-                        <rect x="1" y="-1" width="79.2195" height="7.87805" transform="matrix(1 0 0 -1 9.39062 16.1707)" stroke="#232629" stroke-width="2"></rect>
-                        <rect x="55.3906" y="40.0244" width="25.439" height="8.97561" stroke="#00A84F" stroke-width="2"></rect>
-                        <rect x="55.3906" y="57.5853" width="25.439" height="8.97561" stroke="#00A84F" stroke-width="2"></rect>
-                        <path d="M55.4873 85.1219V91.7073H44.5117V85.1219" stroke="#232629" stroke-width="2"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M32.4392 49.0207V41.0244V39.0244C31.7674 39.0244 31.0991 39.0718 30.4392 39.1653C28.3271 39.4643 26.3 40.2345 24.5122 41.4291C22.1658 42.9969 20.3369 45.2253 19.257 47.8325C18.1771 50.4397 17.8945 53.3085 18.4451 56.0763C18.9956 58.8441 20.3545 61.3865 22.35 63.3819C24.3454 65.3774 26.8878 66.7363 29.6556 67.2868C32.4234 67.8374 35.2922 67.5548 37.8994 66.4749C40.5066 65.395 42.735 63.5662 44.3028 61.2197C45.4974 59.4319 46.2676 57.4048 46.5666 55.2927C46.6601 54.6328 46.7075 53.9645 46.7075 53.2927H44.7075H36.7921L35.1312 55.2927H44.5434C44.26 57.0076 43.6141 58.6507 42.6399 60.1086C41.2919 62.1261 39.3758 63.6986 37.1341 64.6271C34.8923 65.5557 32.4256 65.7986 30.0458 65.3253C27.666 64.8519 25.48 63.6835 23.7642 61.9677C22.0485 60.2519 20.88 58.0659 20.4066 55.6861C19.9333 53.3063 20.1762 50.8396 21.1048 48.5978C22.0333 46.3561 23.6058 44.4401 25.6233 43.092C27.0812 42.1178 28.7243 41.4719 30.4392 41.1885V51.4291L32.4392 49.0207Z" fill="#00A84F"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M79.9336 5H13V62.494C13 64.9189 13.488 67.2758 14.3956 69.4437L12.9733 71.1564C11.6944 68.4957 11 65.5432 11 62.494V5V3H13H81.5945L79.9336 5ZM86 10.869V62.494C86 68.8033 82.6966 74.652 77.2933 77.9094L49.5 94.6647L21.7067 77.9094C20.9501 77.4533 20.2347 76.9463 19.5637 76.3944L18.2859 77.9331C19.0335 78.5486 19.8308 79.1138 20.6742 79.6222L49.5 97L78.3258 79.6222C84.3296 76.0029 88 69.5043 88 62.494V8.46064L86 10.869Z" fill="#232629"></path>
+                        <rect x="36" y="26" width="28" height="28" stroke="#00A84F" stroke-width="2"></rect>
+                        <path d="M44 39.3333L48.439 44L57 35" stroke="#00A84F" stroke-width="2"></path>
                       </svg>
                     </div>
                     <div class="feature-card__bot"> 
                       <h3 class="title-40 feature-card__heading">Гарантия</h3>
-                      <p class="text-22 feature-card__text">Гарантируем качество и надежность нашей продукции, чтобы вы могли быть уверены в своей покупке <br class="desktop"/>
-                      </p>
-                      <div class="feature-card__link"> <a class="button" href="#">
-                          <div class="button__icon">
+                      <p class="text-22 feature-card__text">Гарантируем качество и надежность нашей продукции, чтобы вы могли быть уверены в своей покупке</p>
+                      <div class="feature-card__link"> 
+                        <div class="button"><span class="button__icon">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                            </svg>
-                          </div>
-                          <div class="button__text"> Подробнее</div></a>
+                            </svg></span><span class="button__text"> Подробнее</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="feature-card">
-                    <div class="feature-card__icon"> 
-                      <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04297 13.2744H1.04297V14.2744V66.693V67.693H2.04297H18.7338L20.3947 65.693H3.04297V15.2744H96.9579V65.693H28.6314L26.9705 67.693H97.9579H98.9579V66.693V14.2744V13.2744H97.9579H2.04297Z" fill="#232629"></path>
-                        <path d="M50 66.693C50 56.2217 58.4886 47.733 68.9599 47.733H72.3058C82.7771 47.733 91.2657 56.2217 91.2657 66.693V66.693H50V66.693Z" stroke="#232629" stroke-width="2"></path>
-                        <path d="M97.9579 66.6929V75.6153H50.0004M2.04297 66.6929V75.6153H50.0004M50.0004 75.6153V85.0952" stroke="#232629" stroke-width="2"></path>
-                        <line x1="46.6553" y1="71.2694" x2="53.347" y2="71.2694" stroke="#232629" stroke-width="2"></line>
-                        <line x1="41.0771" y1="85.7682" x2="58.9218" y2="85.7682" stroke="#232629" stroke-width="2"></line>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M74.5097 23.8966C73.3243 23.3725 72.0128 23.0814 70.6333 23.0814C65.334 23.0814 61.0381 27.3774 61.0381 32.6767C61.0381 37.976 65.334 42.2719 70.6333 42.2719C75.9326 42.2719 80.2286 37.976 80.2286 32.6767C80.2286 31.0748 79.836 29.5646 79.1419 28.237L80.5067 26.5936C81.5985 28.362 82.2286 30.4457 82.2286 32.6767C82.2286 39.0805 77.0372 44.2719 70.6333 44.2719C64.2295 44.2719 59.0381 39.0805 59.0381 32.6767C59.0381 26.2728 64.2295 21.0814 70.6333 21.0814C72.5013 21.0814 74.2662 21.5231 75.8291 22.3078L74.5097 23.8966Z" fill="#232629"></path>
-                        <circle cx="22.6765" cy="36.0225" r="13.9411" stroke="#00A84F" stroke-width="2"></circle>
-                        <path d="M28.8095 36.0225L19.6084 41.3348L19.6084 30.7102L28.8095 36.0225Z" stroke="#00A84F" stroke-width="2"></path>
+                    </div></a><a class="feature-card" href="#">
+                    <div class="feature-card__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        <g clip-path="url(#clip0_2163_5033)">
+                          <path d="M14.9998 78.03C20.4642 76.6772 25.6652 75.3005 29.7051 75.3005C31.2845 75.3005 32.6212 75.5341 33.7086 75.9984C37.9172 77.8524 40.0161 86.4214 42.0598 93.6C45.9203 94.2434 47.9171 94.3 49.9372 94.3C52.9573 94.3 54.9492 94.0511 57.8098 93.61C59.8511 86.6314 61.8571 77.8618 66.1634 76.01C67.3509 75.4434 68.9875 75.3052 70.1669 75.3052C74.2069 75.3052 79.4076 76.6872 84.8698 78.04C88.8813 73.1665 90.8449 69.2482 92.4898 65.03C88.7693 61.1661 81.3059 54.1241 81.4059 49.2547C81.3059 45.0829 86.5692 39.4386 92.4897 33.4748C90.9449 29.4566 88.2813 24.3435 84.8697 20.47C79.4053 21.8228 74.2069 23.2042 70.1669 23.2042C68.5875 23.2042 67.3509 23.0043 66.2634 22.54C61.8548 20.7859 59.7534 11.5786 57.8097 4.89995C55.1514 4.45189 52.9198 4.20007 49.8997 4.20007C47.3997 4.20007 44.9203 4.40007 42.0597 4.90002C40.1183 11.4786 38.1172 20.6883 33.6109 22.54C32.0235 23.2066 30.2869 23.1949 29.7074 23.1949C25.6675 23.1949 19.9641 21.7128 14.9997 20.46C11.3881 24.7381 9.03448 29.1595 7.38967 33.48C12.8102 39.0439 18.4662 44.6783 18.4662 49.25C18.5662 53.7218 12.6125 59.6561 7.38965 65.02C9.23446 70.0382 12.0882 74.5565 14.9998 78.03ZM9.97967 32.94C11.8839 28.5615 13.6633 25.7554 15.8197 22.97C20.551 24.1471 25.7317 25.4199 29.7051 25.4199C32.0234 25.4199 34.0515 25.0574 35.9095 23.8093C39.7906 20.9823 41.5858 14.7579 43.8197 6.87C45.9726 6.55031 48.2421 6.42503 49.9372 6.42503C52.1322 6.42503 54.4068 6.64031 56.0597 6.86C58.2936 14.7502 60.1086 21.0846 63.9897 23.8116C65.2454 24.662 67.0509 25.4222 70.1693 25.4222C74.2427 25.4222 79.8183 24.0447 84.0497 22.97C85.9061 25.3554 88.0854 28.6592 89.8897 32.94C84.3443 38.6426 79.1855 44.1156 79.1855 49.2523C79.1855 54.7867 85.1467 60.6574 89.8898 65.56C87.9855 70.0408 86.0061 72.9546 84.0498 75.54C79.3184 74.3629 74.0427 73.0801 70.1693 73.0801C67.2509 73.0801 65.5229 73.7219 64.1648 74.57C60.1837 77.197 58.0936 84.2497 56.0598 91.64C53.6069 91.9574 51.6322 92.075 49.9372 92.075C47.6421 92.075 46.3726 91.9497 43.8198 91.63C43.1859 89.8397 40.5883 77.637 35.9095 74.71C34.2538 73.5596 32.2234 73.0778 29.7051 73.0778C25.8317 73.0778 20.5511 74.3552 15.8198 75.53C13.8634 73.0446 11.3839 69.0308 9.97967 65.55C15.225 60.1474 20.7888 54.3844 20.6888 49.25C20.6912 44.1133 15.525 38.6426 9.97967 32.94Z" fill="#232629"></path>
+                          <mask id="path-2-inside-1_2163_5033" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M42.9385 61.7289C44.8921 62.7792 47.1264 63.375 49.5 63.375C57.1636 63.375 63.375 57.1636 63.375 49.5C63.375 46.2082 62.229 43.1843 60.3141 40.8056L57.265 44.4773C58.2041 45.9245 58.75 47.6496 58.75 49.5C58.75 54.6014 54.6014 58.75 49.5 58.75C48.2572 58.75 47.0709 58.5038 45.9874 58.0575L42.9385 61.7289ZM41.4346 54.0263L38.3425 57.7498C36.6348 55.4439 35.625 52.59 35.625 49.5C35.625 41.8364 41.8364 35.625 49.5 35.625C51.6734 35.625 53.7301 36.1246 55.5613 37.0152L52.4693 40.7386C51.537 40.4218 50.5382 40.25 49.5 40.25C44.3986 40.25 40.25 44.3986 40.25 49.5C40.25 51.1432 40.6805 52.6876 41.4346 54.0263Z"></path>
+                          </mask>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M42.9385 61.7289C44.8921 62.7792 47.1264 63.375 49.5 63.375C57.1636 63.375 63.375 57.1636 63.375 49.5C63.375 46.2082 62.229 43.1843 60.3141 40.8056L57.265 44.4773C58.2041 45.9245 58.75 47.6496 58.75 49.5C58.75 54.6014 54.6014 58.75 49.5 58.75C48.2572 58.75 47.0709 58.5038 45.9874 58.0575L42.9385 61.7289ZM41.4346 54.0263L38.3425 57.7498C36.6348 55.4439 35.625 52.59 35.625 49.5C35.625 41.8364 41.8364 35.625 49.5 35.625C51.6734 35.625 53.7301 36.1246 55.5613 37.0152L52.4693 40.7386C51.537 40.4218 50.5382 40.25 49.5 40.25C44.3986 40.25 40.25 44.3986 40.25 49.5C40.25 51.1432 40.6805 52.6876 41.4346 54.0263Z" fill="#00A84F"></path>
+                          <path d="M42.9385 61.7289L42.0923 61.0261L41.233 62.0608L42.4177 62.6977L42.9385 61.7289ZM60.3141 40.8056L61.171 40.1158L60.3274 39.0678L59.4679 40.1028L60.3141 40.8056ZM57.265 44.4773L56.4187 43.7745L55.9016 44.3972L56.3422 45.0761L57.265 44.4773ZM45.9874 58.0575L46.4063 57.0404L45.6581 56.7322L45.1411 57.3547L45.9874 58.0575ZM41.4346 54.0263L42.2808 54.7291L42.7647 54.1464L42.393 53.4865L41.4346 54.0263ZM38.3425 57.7498L37.4585 58.4044L38.2929 59.5312L39.1887 58.4525L38.3425 57.7498ZM55.5613 37.0152L56.4076 37.718L57.3034 36.6392L56.0424 36.026L55.5613 37.0152ZM52.4693 40.7386L52.1155 41.7801L52.8321 42.0235L53.3155 41.4413L52.4693 40.7386ZM42.4177 62.6977C44.5274 63.832 46.9402 64.475 49.5 64.475V62.275C47.3126 62.275 45.2568 61.7263 43.4594 60.76L42.4177 62.6977ZM49.5 64.475C57.7711 64.475 64.475 57.7711 64.475 49.5H62.275C62.275 56.5561 56.5561 62.275 49.5 62.275V64.475ZM64.475 49.5C64.475 45.9484 63.2375 42.683 61.171 40.1158L59.4573 41.4953C61.2205 43.6857 62.275 46.468 62.275 49.5H64.475ZM58.1112 45.1801L61.1604 41.5083L59.4679 40.1028L56.4187 43.7745L58.1112 45.1801ZM56.3422 45.0761C57.1695 46.3509 57.65 47.869 57.65 49.5H59.85C59.85 47.4302 59.2388 45.4981 58.1877 43.8785L56.3422 45.0761ZM57.65 49.5C57.65 53.9939 53.9939 57.65 49.5 57.65V59.85C55.2089 59.85 59.85 55.2089 59.85 49.5H57.65ZM49.5 57.65C48.4036 57.65 47.3595 57.433 46.4063 57.0404L45.5685 59.0746C46.7823 59.5746 48.1107 59.85 49.5 59.85V57.65ZM43.7848 62.4316L46.8336 58.7603L45.1411 57.3547L42.0923 61.0261L43.7848 62.4316ZM40.5883 53.3236L37.4962 57.047L39.1887 58.4525L42.2808 54.7291L40.5883 53.3236ZM34.525 49.5C34.525 52.8336 35.6153 55.9156 37.4585 58.4044L39.2264 57.0951C37.6543 54.9723 36.725 52.3464 36.725 49.5H34.525ZM49.5 34.525C41.2289 34.525 34.525 41.2289 34.525 49.5H36.725C36.725 42.4439 42.4439 36.725 49.5 36.725V34.525ZM56.0424 36.026C54.0645 35.0641 51.8437 34.525 49.5 34.525V36.725C51.5032 36.725 53.3956 37.1851 55.0802 38.0044L56.0424 36.026ZM54.7151 36.3124L51.6231 40.0358L53.3155 41.4413L56.4076 37.718L54.7151 36.3124ZM49.5 41.35C50.4161 41.35 51.2954 41.5015 52.1155 41.7801L52.8231 39.697C51.7785 39.3421 50.6603 39.15 49.5 39.15V41.35ZM41.35 49.5C41.35 45.0061 45.0061 41.35 49.5 41.35V39.15C43.7911 39.15 39.15 43.7911 39.15 49.5H41.35ZM42.393 53.4865C41.7291 52.3079 41.35 50.9488 41.35 49.5H39.15C39.15 51.3377 39.6319 53.0674 40.4762 54.5662L42.393 53.4865Z" fill="#EEEEEE" mask="url(#path-2-inside-1_2163_5033)"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_2163_5033">
+                            <rect width="111" height="111" fill="white" transform="translate(-6 -6)"></rect>
+                          </clipPath>
+                        </defs>
                       </svg>
                     </div>
                     <div class="feature-card__bot"> 
                       <h3 class="title-40 feature-card__heading">Сервисные центры</h3>
-                      <p class="text-22 feature-card__text">Сможем подсказать по ремонту и обслуживанию нашей продукции, чтобы обеспечить надежную работу и долгий срок службы <br class="desktop"/>
-                      </p>
-                      <div class="feature-card__link"> <a class="button" href="#">
-                          <div class="button__icon">
+                      <p class="text-22 feature-card__text">Сможем подсказать по ремонту и обслуживанию нашей продукции, чтобы обеспечить надежную работу и долгий срок службы</p>
+                      <div class="feature-card__link"> 
+                        <div class="button"><span class="button__icon">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                            </svg>
-                          </div>
-                          <div class="button__text"> Подробнее</div></a>
+                            </svg></span><span class="button__text"> Подробнее</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="feature-card">
-                    <div class="feature-card__icon"> 
+                    </div></a><a class="feature-card" href="#">
+                    <div class="feature-card__icon">
                       <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_458_3055)">
-                          <path d="M7.71484 87.0994L39.4174 87.0994V98H45.1402H59.4926L59.4017 87.0994L91.2859 87.0994" stroke="#232629" stroke-width="2"></path>
-                          <path d="M84.7462 87.0994V76.9255H59.8566L49.5011 82.0125L39.1455 76.9255H14.2559V87.0994" stroke="#232629" stroke-width="2"></path>
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M49.5002 5.98175C38.614 5.98175 29.7891 14.8067 29.7891 25.6928C29.7891 28.8969 30.5534 31.9226 31.9101 34.5974L30.5297 36.2597C28.7841 33.1326 27.7891 29.5291 27.7891 25.6928C27.7891 13.7021 37.5095 3.98175 49.5002 3.98175C55.1444 3.98175 60.2855 6.13551 64.1466 9.66602L62.8673 11.2066C59.3541 7.96324 54.6585 5.98175 49.5002 5.98175ZM34.3073 41.2023C35.5527 42.4225 36.9444 43.4938 38.4534 44.3873L39.4724 42.6664C38.054 41.8265 36.7501 40.8141 35.5896 39.6581L34.3073 41.2023ZM66.7083 16.0727L68.0682 14.4351C70.0627 17.7177 71.2113 21.5711 71.2113 25.6928C71.2113 33.6514 66.9286 40.6085 60.5469 44.3873L59.5279 42.6664C65.3267 39.2327 69.2113 32.9159 69.2113 25.6928C69.2113 22.1994 68.3024 18.9181 66.7083 16.0727Z" fill="#232629"></path>
-                          <path d="M38.9619 42.7704V63.1182H60.0364V42.7704" stroke="#232629" stroke-width="2"></path>
-                          <rect width="13.8074" height="6.54035" transform="matrix(1 0 0 -1 42.5957 73.292)" stroke="#232629" stroke-width="2"></rect>
-                          <line x1="75.2979" y1="23.6028" x2="86.6027" y2="23.6028" stroke="#00A84F" stroke-width="2"></line>
-                          <line x1="12.0752" y1="23.6028" x2="23.3801" y2="23.6028" stroke="#00A84F" stroke-width="2"></line>
-                          <line x1="69.5038" y1="8.63493" x2="77.4976" y2="0.641179" stroke="#00A84F" stroke-width="2"></line>
-                          <line y1="-1" x2="11.3049" y2="-1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 28.79 9.34204)" stroke="#00A84F" stroke-width="2"></line>
-                          <line y1="-1" x2="11.3049" y2="-1" transform="matrix(0.707107 0.707107 0.707107 -0.707107 70.2109 39.8636)" stroke="#00A84F" stroke-width="2"></line>
-                          <line x1="29.4971" y1="40.5707" x2="21.5034" y2="48.5644" stroke="#00A84F" stroke-width="2"></line>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M50 5C25.1472 5 5 25.1472 5 50V51.1V52.3198L6.19612 52.0806L28 47.7198L49 51.9198V64.6697L51 62.2614V51.9198L72 47.7198L93.8039 52.0806L95 52.3198V51.1V50C95 25.1472 74.8528 5 50 5ZM51 71.775L49 74.1833V83C49 88.5229 44.5229 93 39 93C33.4772 93 29 88.5229 29 83V76.95H27V83C27 89.6274 32.3726 95 39 95C45.6274 95 51 89.6274 51 83V71.775ZM71.8039 45.7194L50 50.0802L28.1961 45.7194L28 45.6802L27.8039 45.7194L7.00016 49.8802C7.06481 26.187 26.2917 7 50 7C73.7083 7 92.9352 26.187 92.9998 49.8802L72.1961 45.7194L72 45.6802L71.8039 45.7194Z" fill="#232629"></path>
+                        <g clip-path="url(#clip0_3002_2952)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M50 5C25.1472 5 5 25.1472 5 50V51.1V52.3198L6.19612 52.0806L28 47.7198L49 51.9198V64.6697L51 62.2614V51.9198L72 47.7198L93.8039 52.0806L95 52.3198V51.1V50C95 25.1472 74.8528 5 50 5ZM51 71.775L49 74.1833V83C49 88.5229 44.5229 93 39 93C33.4772 93 29 88.5229 29 83V76.95H27V83C27 89.6274 32.3726 95 39 95C45.6274 95 51 89.6274 51 83V71.775ZM71.8039 45.7194L50 50.0802L28.1961 45.7194L28 45.6802L27.8039 45.7194L7.00016 49.8802C7.06481 26.187 26.2917 7 50 7C73.7083 7 92.9352 26.187 92.9998 49.8802L72.1961 45.7194L72 45.6802L71.8039 45.7194Z" fill="#00A84F"></path>
                         </g>
                         <defs>
-                          <clippath id="clip0_458_3055">
-                            <rect width="100" height="100" fill="white"></rect>
+                          <clippath id="clip0_3002_2952">
+                            <rect width="90" height="23" fill="white" transform="translate(5 72)"></rect>
                           </clippath>
                         </defs>
                       </svg>
                     </div>
                     <div class="feature-card__bot"> 
                       <h3 class="title-40 feature-card__heading">Страховка</h3>
-                      <p class="text-22 feature-card__text">Предоставляем индивидуальный подход к каждому клиенту, помогая выбрать оптимальные страховые решения <br class="desktop"/>
-                      </p>
-                      <div class="feature-card__link"> <a class="button" href="#">
-                          <div class="button__icon">
+                      <p class="text-22 feature-card__text">Предоставляем индивидуальный подход к каждому клиенту, помогая выбрать оптимальные страховые решения</p>
+                      <div class="feature-card__link"> 
+                        <div class="button"><span class="button__icon">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                            </svg>
-                          </div>
-                          <div class="button__text"> Подробнее</div></a>
+                            </svg></span><span class="button__text"> Подробнее</span></div>
                       </div>
-                    </div>
-                  </div>
+                    </div></a>
                 </div>
               </div>
             </div>
@@ -624,8 +802,8 @@
                     <div class="news-card__date text-18">
                        29 июля</div>
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x" alt="news-1.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x" alt="news-1.jpg"/><img class="picture__img lazyload" data-src="images/news-1.jpg" alt="news-1.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/news-1.webp 1x"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-1.jpg 1x"/><img class="picture__img lazyload" src="images/news-1.jpg" data-src="images/news-1.jpg" alt="news-1.jpg"/>
                     </picture>
                   </div>
                   <div class="news-card__label text-18">
@@ -635,8 +813,8 @@
                     <div class="news-card__date text-18">
                        29 июля</div>
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/news-2.webp 1x" alt="news-2.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/news-2.jpg 1x" alt="news-2.jpg"/><img class="picture__img lazyload" data-src="images/news-2.jpg" alt="news-2.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/news-2.webp 1x"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-2.jpg 1x"/><img class="picture__img lazyload" src="images/news-2.jpg" data-src="images/news-2.jpg" alt="news-2.jpg"/>
                     </picture>
                   </div>
                   <div class="news-card__label text-18">
@@ -646,8 +824,8 @@
                     <div class="news-card__date text-18">
                        29 июля</div>
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/news-3.webp 1x" alt="news-3.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/news-3.jpg 1x" alt="news-3.jpg"/><img class="picture__img lazyload" data-src="images/news-3.jpg" alt="news-3.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/news-3.webp 1x"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-3.jpg 1x"/><img class="picture__img lazyload" src="images/news-3.jpg" data-src="images/news-3.jpg" alt="news-3.jpg"/>
                     </picture>
                   </div>
                   <div class="news-card__label text-18">
@@ -657,8 +835,8 @@
                     <div class="news-card__date text-18">
                        29 июля</div>
                     <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/news-4.webp 1x" alt="news-4.jpg"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/news-4.jpg 1x" alt="news-4.jpg"/><img class="picture__img lazyload" data-src="images/news-4.jpg" alt="news-4.jpg"/>
+                      <source class="lazyload" type="image/webp" srcset="webp/news-4.webp 1x"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/news-4.jpg 1x"/><img class="picture__img lazyload" src="images/news-4.jpg" data-src="images/news-4.jpg" alt="news-4.jpg"/>
                     </picture>
                   </div>
                   <div class="news-card__label text-18">
@@ -679,9 +857,8 @@
             <div class="container">
               <div class="features-block">
                 <h2 class="title-80 features-block__title"> Обучение</h2>
-                <div class="features-block__grid"> 
-                  <div class="feature-card">
-                    <div class="feature-card__icon"> 
+                <div class="features-block__grid"> <a class="feature-card" href="#">
+                    <div class="feature-card__icon">
                       <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7 23.4634H93V83.1219H10.7643L9.1034 85.1219H93H95V83.1219V23.4634V21.4634H93H7H5V23.4634V80.5495L7 78.1412V23.4634Z" fill="#232629"></path>
                         <rect x="1" y="-1" width="79.2195" height="7.87805" transform="matrix(1 0 0 -1 9.39062 16.1707)" stroke="#232629" stroke-width="2"></rect>
@@ -693,20 +870,15 @@
                     </div>
                     <div class="feature-card__bot"> 
                       <h3 class="title-40 feature-card__heading">Семинары</h3>
-                      <p class="text-22 feature-card__text">Вы можете ознакомиться с расписанием предстоящих семинаров, углубить свои знания и обменяться опытом с экспертами <br class="desktop"/>
-                      </p>
-                      <div class="feature-card__link"> <a class="button" href="#">
-                          <div class="button__icon">
+                      <p class="text-22 feature-card__text">Вы можете ознакомиться с расписанием предстоящих семинаров, углубить свои знания и обменяться опытом с экспертами</p>
+                      <div class="feature-card__link"> 
+                        <div class="button"><span class="button__icon">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                            </svg>
-                          </div>
-                          <div class="button__text"> Подробнее</div></a>
+                            </svg></span><span class="button__text"> Подробнее</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="feature-card">
-                    <div class="feature-card__icon"> 
+                    </div></a><a class="feature-card" href="#">
+                    <div class="feature-card__icon">
                       <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04297 13.2744H1.04297V14.2744V66.693V67.693H2.04297H18.7338L20.3947 65.693H3.04297V15.2744H96.9579V65.693H28.6314L26.9705 67.693H97.9579H98.9579V66.693V14.2744V13.2744H97.9579H2.04297Z" fill="#232629"></path>
                         <path d="M50 66.693C50 56.2217 58.4886 47.733 68.9599 47.733H72.3058C82.7771 47.733 91.2657 56.2217 91.2657 66.693V66.693H50V66.693Z" stroke="#232629" stroke-width="2"></path>
@@ -720,20 +892,15 @@
                     </div>
                     <div class="feature-card__bot"> 
                       <h3 class="title-40 feature-card__heading">Вебинары</h3>
-                      <p class="text-22 feature-card__text">Вы можете учиться онлайн и проконсультироваться с профессионалами в удобное для вас время <br class="desktop"/>
-                      </p>
-                      <div class="feature-card__link"> <a class="button" href="#">
-                          <div class="button__icon">
+                      <p class="text-22 feature-card__text">Вы можете учиться онлайн и проконсультироваться с профессионалами в удобное для вас время</p>
+                      <div class="feature-card__link"> 
+                        <div class="button"><span class="button__icon">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                            </svg>
-                          </div>
-                          <div class="button__text"> Подробнее</div></a>
+                            </svg></span><span class="button__text"> Подробнее</span></div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="feature-card">
-                    <div class="feature-card__icon"> 
+                    </div></a><a class="feature-card" href="#">
+                    <div class="feature-card__icon">
                       <svg width="100" height="100" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_458_3055)">
                           <path d="M7.71484 87.0994L39.4174 87.0994V98H45.1402H59.4926L59.4017 87.0994L91.2859 87.0994" stroke="#232629" stroke-width="2"></path>
@@ -757,18 +924,14 @@
                     </div>
                     <div class="feature-card__bot"> 
                       <h3 class="title-40 feature-card__heading">Самостоятельное обучение</h3>
-                      <p class="text-22 feature-card__text">Мы подготовим вам полезные материалы для развития навыков и знаний в выбранной области <br class="desktop"/>
-                      </p>
-                      <div class="feature-card__link"> <a class="button" href="#">
-                          <div class="button__icon">
+                      <p class="text-22 feature-card__text">Мы подготовим вам полезные материалы для развития навыков и знаний в выбранной области</p>
+                      <div class="feature-card__link"> 
+                        <div class="button"><span class="button__icon">
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
-                            </svg>
-                          </div>
-                          <div class="button__text"> Подробнее</div></a>
+                            </svg></span><span class="button__text"> Подробнее</span></div>
                       </div>
-                    </div>
-                  </div>
+                    </div></a>
                 </div>
               </div>
             </div>
@@ -777,10 +940,10 @@
             <div class="main-page__about">
               <div class="main-page__about-image">
                 <picture class="picture">
-                  <source class="lazyload" type="image/webp" srcset="webp/main-about.webp 1x" alt="main-about.jpg" media="(min-width: 768px)"/>
-                  <source class="lazyload" type="image/jpeg" srcset="images/main-about.jpg 1x" alt="main-about.jpg" media="(min-width: 768px)"/>
-                  <source class="lazyload" type="image/webp" srcset="webp/main-about-mob.webp 1x" alt="main-about.jpg" media="(max-width: 767px)"/>
-                  <source class="lazyload" type="image/jpeg" srcset="images/main-about-mob.jpg 1x" alt="main-about.jpg" media="(max-width: 767px)"/><img class="picture__img lazyload" data-src="images/main-about.jpg" alt="main-about.jpg"/>
+                  <source class="lazyload" type="image/webp" srcset="webp/main-about.webp 1x" media="(min-width: 768px)"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/main-about.jpg 1x" media="(min-width: 768px)"/>
+                  <source class="lazyload" type="image/webp" srcset="webp/main-about-mob.webp 1x" media="(max-width: 767px)"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/main-about-mob.jpg 1x" media="(max-width: 767px)"/><img class="picture__img lazyload" src="images/main-about.jpg" data-src="images/main-about.jpg" alt="main-about.jpg"/>
                 </picture>
               </div>
               <div class="main-page__about-content">
@@ -809,21 +972,20 @@
               </div>
             </div>
           </section>
-          <div class="feedback">
+          <div class="feedback-form">
             <div class="container">
-              <div class="feedback__row"> 
-                <div class="feedback__col">
-                  <h2 class="title-80 feedback__title">
-                     Напишите нам</h2>
-                  <p class="text-22 feedback__text">Если вас заинтересовала наша продукция и вы хотите получить подробную информацию</p>
+              <div class="feedback-form__row">
+                <div class="feedback-form__col">
+                  <h2 class="title-80 feedback-form__title">Напишите нам</h2>
+                  <p class="text-22 feedback-form__text">Если вас заинтересовала наша продукция и вы хотите получить подробную информацию</p>
                 </div>
-                <div class="feedback__col">
-                  <form class="feedback__form" action="/"> 
-                    <div class="feedback__grid"> 
-                      <div class="feedback__item">
+                <div class="feedback-form__col">
+                  <form class="feedback-form__form" action="/">
+                    <div class="feedback-form__fields">
+                      <div class="feedback-form__item">
                         <div class="input-ui custom-placeholder" data-input-parent="">
-                          <input data-input="" name="Отправить" placeholder="Отправить"/>
-                          <div class="custom-placeholder__service"><span>Отправить</span>
+                          <input data-input="" name="name" placeholder="Имя*" type="text" required="" autocomplete="name"/>
+                          <div class="custom-placeholder__service"><span>Имя*</span>
                             <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_3001_895)">
                                 <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
@@ -839,9 +1001,9 @@
                           </div>
                         </div>
                       </div>
-                      <div class="feedback__item">
+                      <div class="feedback-form__item">
                         <div class="input-ui custom-placeholder" data-input-parent="">
-                          <input data-input="" name="E-mail*" placeholder="E-mail*"/>
+                          <input data-input="" name="email" placeholder="E-mail*" type="email" required="" autocomplete="email"/>
                           <div class="custom-placeholder__service"><span>E-mail*</span>
                             <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_3001_895)">
@@ -858,9 +1020,9 @@
                           </div>
                         </div>
                       </div>
-                      <div class="feedback__item">
+                      <div class="feedback-form__item">
                         <div class="input-ui custom-placeholder" data-input-parent="">
-                          <input data-input="" name="Телефон*" placeholder="Телефон*"/>
+                          <input data-input="" name="phone" placeholder="Телефон*" type="tel" required="" autocomplete="tel"/>
                           <div class="custom-placeholder__service"><span>Телефон*</span>
                             <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_3001_895)">
@@ -878,7 +1040,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="feedback__textarea"> 
+                    <div class="feedback-form__textarea">
                       <div class="textarea-ui custom-placeholder" data-input-parent="">
                         <textarea data-input="" required="required" name="" placeholder="Сообщение"></textarea>
                         <div class="custom-placeholder__service"><span>Сообщение</span>
@@ -897,13 +1059,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="feedback__bot"> 
-                      <div class="feedback__policy"> 
-                        <div class="policy">
-                           Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a href="#">персональных данных</a> и соглашаетесь c <a href="#">политикой конфиденциальности</a></div>
-                      </div>
-                      <div class="feedback__button"> 
-                        <button class="button"><span class="button__icon">
+                    <div class="feedback-form__bot">
+                      <div class="feedback-form__policy policy">Нажимая на кнопку «Подписаться», вы даете согласие на обработку <a class="inline-link" href="#">персональных данных</a> и соглашаетесь c <a class="inline-link" href="#">политикой конфиденциальности</a></div>
+                      <div class="feedback-form__button">
+                        <button class="button"><span class="button__icon"><span class="loader"></span>
                             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
                             </svg></span><span class="button__text"> Отправить</span></button>
@@ -945,7 +1104,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="footer__news-btn">
+                    <button class="button-small"><span class="loader"></span>
                       <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
                       </svg>
@@ -958,13 +1117,13 @@
                 </div>
                 <div class="footer__socials">
                   <div class="footer__socials-mails">
-                    <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="tel:8 800 350-23-80">
+                    <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="tel:88003502380">
                          8 800 350-23-80</a></div>
                     <div class="footer__socials-wrapper"> <a class="footer__socials-email title-28" href="mailto:info@hoobs.ru">
                          info@hoobs.ru</a></div>
                   </div>
                   <div class="footer__socials-inner"> 
-                    <div class="footer__socials-item"><a class="footer__socials-link" href="#"> 
+                    <div class="footer__socials-item"><a class="footer__socials-link" href="https://t.me/hoobs_russia"> 
                         <div class="footer__socials-icon"> 
                           <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="30" rx="15" fill="#232629"></rect>
@@ -972,7 +1131,7 @@
                           </svg>
                         </div>
                         <div class="footer__socials-text text-18">Telegram</div></a></div>
-                    <div class="footer__socials-item"><a class="footer__socials-link" href="#"> 
+                    <div class="footer__socials-item"><a class="footer__socials-link" href="https://www.youtube.com/@hoobs_Russia/"> 
                         <div class="footer__socials-icon"> 
                           <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="30" rx="15" fill="#232629"></rect>
