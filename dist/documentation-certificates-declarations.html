@@ -115,7 +115,7 @@
                           </div>
                           <div class="header__catalog-text text-22">Каталог</div>
                         </button>
-                        <button class="header__search" data-header-menu-btn="header-search">
+                        <button class="header__search" data-header-search-btn="header-search">
                           <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
@@ -196,6 +196,12 @@
                 </div>
                 <div class="header__col">
                   <div class="header__buttons"> 
+                    <button class="header__search" data-header-search-btn="header-search">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
+                      </svg>
+                    </button>
                     <button class="header__catalog" data-burger-menu-btn=""> 
                       <div class="header__catalog-icon">
                         <svg class="closed" width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -219,12 +225,6 @@
                           </defs>
                         </svg>
                       </div>
-                    </button>
-                    <button class="header__search" data-header-menu-btn="header-search">
-                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="stroke" d="M16.9861 16.9862L22.0018 22.0018" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9998 10.7499C17.9998 14.7539 14.7539 17.9998 10.7499 17.9998C9.45258 17.9998 8.23486 17.659 7.18134 17.0622L5.96197 18.0748C7.33766 18.9758 8.98259 19.4998 10.7499 19.4998C15.5823 19.4998 19.4998 15.5823 19.4998 10.7499C19.4998 9.5587 19.2617 8.4231 18.8307 7.38807L17.6108 8.40106C17.863 9.13769 17.9998 9.92781 17.9998 10.7499ZM16.7343 4.3665L15.5695 5.33383C14.2885 4.1931 12.6001 3.5 10.7499 3.5C6.74589 3.5 3.5 6.74589 3.5 10.7499C3.5 12.1196 3.87983 13.4006 4.53992 14.4933L3.37503 15.4606C2.50461 14.1008 2 12.4843 2 10.7499C2 5.91746 5.91746 2 10.7499 2C13.0646 2 15.1694 2.89882 16.7343 4.3665Z" fill="#232629"></path>
-                      </svg>
                     </button>
                   </div>
                 </div>
@@ -294,31 +294,40 @@
                 <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a></div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="fitting">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="warm-floor">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="pump">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="collectors">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="quick-installation">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="water-heating">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="valve">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="radiator-fittings">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
               <div class="header-menu__submenu-item" data-header-submenu="flues">
-                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a></div>
+                <div class="header-menu__submenu-inner"><a class="header-menu__submenu-link text-22" href="#">Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</a><a class="header-menu__submenu-link text-22" href="#">Труба гофрированная</a><a class="header-menu__submenu-link text-22" href="#">Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</a><a class="header-menu__submenu-link text-22" href="#">Труба из сшитого полиэтилена PE-Xa/EVOH</a>
+                </div>
               </div>
             </div>
           </div>
@@ -341,7 +350,7 @@
             </div>
           </div>
         </div>
-        <div class="header-search" data-header-menu="header-search">
+        <div class="header-search" data-header-search="header-search">
           <div class="header-search__inner"> 
             <div class="header-search__title title-28">Поиск по сайту</div>
             <div class="header-search__content">
@@ -392,19 +401,295 @@
           </div>
         </div>
         <div class="burger-menu devices" data-burger-menu=""> 
-          <div class="burger-menu__inner title-80">.burger-menu  
-            <ul> 
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
+          <div class="burger-menu__inner" data-burger-section="burger-main">
+            <div class="burger-menu__inner-top"> <a class="button wide" data-burger-submenu-btn="catalog-mobile">
+                <div class="button__icon">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                  </svg>
+                </div>
+                <div class="button__text"> Каталог</div></a>
+            </div>
+            <div class="burger-menu__inner-bottom">
+              <nav class="burger-menu__nav">
+                <ul class="burger-menu__nav-list">
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> О компании</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="stydy"><span class="button__text"> Обучение</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="support"><span class="button__text"> Поддержка</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="cooperation"><span class="button__text"> Сотрудничество</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Документация</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Новости</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Где купить</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Прайс лист</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> item</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> item</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> item</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> item</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> item</div></a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="burger-menu__contacts"><a class="burger-menu__contact" href="tel:88003502380">8 800 350-23-80</a><a class="burger-menu__contact" href="mailto:info@hoobs.ru">info@hoobs.ru</a></div>
+            </div>
+          </div>
+          <div class="burger-menu__submenu" data-burger-submenu="catalog-mobile">
+            <div class="burger-menu__inner">
+              <div class="burger-menu__inner-top"> 
+                <nav class="burger-menu__nav">
+                  <button class="button-link" data-burger-submenu-back=""><span class="button-link__icon">
+                      <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42299 9.56247L10.0439 13.8936L10.6543 13.1014L5.22817 8.92046V8.07971L10.6543 3.89874L10.0439 3.10662L4.42299 7.4377L4.22817 7.58782V7.83376V9.16641V9.41235L4.42299 9.56247Z" fill="#00A84F"></path>
+                      </svg></span><span class="button-link__text"> Назад</span></button>
+                </nav>
+              </div>
+              <div class="burger-menu__inner-bottom"> 
+                <ul class="burger-menu__nav-list">
+                  <li class="burger-menu__nav-item"> 
+                    <div class="burger-menu__menu-button"><a class="header-menu__menu-link new text-22" href="#"> 
+                        <div class="header-menu__menu-new">NEW</div><span>Новинки</span></a></div>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Трубы</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Фитинги</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Теплый пол</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Насосы и насосные станции</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Коллекторы</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Техника быстрого монтажа</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Водонагреватели</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Запорная арматура</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Радиаторная арматура</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                  <li class="burger-menu__nav-item"> 
+                    <button class="burger-menu__menu-button" data-burger-submenu-btn="catalog-mobile-submenu"><span class="button__text"> Дымоходы</span><span class="button__icon">
+                        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.347 13.5034L7.91553 20L7 18.8118L15.1392 12.5404L15.1392 11.2792L7 5.00778L7.91553 3.81959L16.347 10.3162L16.6392 10.5414L16.6392 10.9103L16.6392 12.9093L16.6392 13.2782L16.347 13.5034Z" fill="white"></path>
+                        </svg></span></button>
+                  </li>
+                </ul>
+                <div class="burger-menu__bottom-link"><a class="button button_gray wide" href="#">
+                    <div class="button__icon">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4341 12.9872L13.7715 17.8948L14.7539 19.0283L20.9783 13.6339L21.2371 13.4096L21.2371 13.0671L21.2371 12.2372L21.2371 11.4073L21.2371 11.0648L20.9783 10.8405L14.7539 5.44606L13.7715 6.57959L19.4341 11.4872L2.76269 11.4872L2.7627 12.9872L19.4341 12.9872Z" fill="white"></path>
+                      </svg>
+                    </div>
+                    <div class="button__text"> Весь каталог</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="burger-menu__submenu" data-burger-submenu="catalog-mobile-submenu">
+            <div class="burger-menu__inner">
+              <div class="burger-menu__inner-top"> 
+                <nav class="burger-menu__nav">
+                  <button class="button-link" data-burger-submenu-back=""><span class="button-link__icon">
+                      <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42299 9.56247L10.0439 13.8936L10.6543 13.1014L5.22817 8.92046V8.07971L10.6543 3.89874L10.0439 3.10662L4.42299 7.4377L4.22817 7.58782V7.83376V9.16641V9.41235L4.42299 9.56247Z" fill="#00A84F"></path>
+                      </svg></span><span class="button-link__text"> Назад</span></button>
+                </nav>
+              </div>
+              <div class="burger-menu__inner-bottom"> 
+                <ul class="burger-menu__nav-list"> 
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба гофрированная</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба из сшитого полиэтилена PE-Xa/EVOH</div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="burger-menu__submenu" data-burger-submenu="stydy">
+            <div class="burger-menu__inner">
+              <div class="burger-menu__inner-top"> 
+                <nav class="burger-menu__nav">
+                  <button class="button-link" data-burger-submenu-back=""><span class="button-link__icon">
+                      <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42299 9.56247L10.0439 13.8936L10.6543 13.1014L5.22817 8.92046V8.07971L10.6543 3.89874L10.0439 3.10662L4.42299 7.4377L4.22817 7.58782V7.83376V9.16641V9.41235L4.42299 9.56247Z" fill="#00A84F"></path>
+                      </svg></span><span class="button-link__text"> Назад</span></button>
+                </nav>
+              </div>
+              <div class="burger-menu__inner-bottom"> 
+                <ul class="burger-menu__nav-list"> 
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба металлопластиковая бесшовная PE-Xb/Al/PE-Xb</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба гофрированная</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба металлополимерная Stabil PE-Xc/Al/PE-Xc</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Труба из сшитого полиэтилена PE-Xa/EVOH</div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="burger-menu__submenu" data-burger-submenu="stydy">
+            <div class="burger-menu__inner">
+              <div class="burger-menu__inner-top"> 
+                <nav class="burger-menu__nav">
+                  <button class="button-link" data-burger-submenu-back=""><span class="button-link__icon">
+                      <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42299 9.56247L10.0439 13.8936L10.6543 13.1014L5.22817 8.92046V8.07971L10.6543 3.89874L10.0439 3.10662L4.42299 7.4377L4.22817 7.58782V7.83376V9.16641V9.41235L4.42299 9.56247Z" fill="#00A84F"></path>
+                      </svg></span><span class="button-link__text"> Назад</span></button>
+                </nav>
+              </div>
+              <div class="burger-menu__inner-bottom"> 
+                <ul class="burger-menu__nav-list"> 
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Семинары</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Вебинары</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Самостоятельное обучение</div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="burger-menu__submenu" data-burger-submenu="support">
+            <div class="burger-menu__inner">
+              <div class="burger-menu__inner-top"> 
+                <nav class="burger-menu__nav">
+                  <button class="button-link" data-burger-submenu-back=""><span class="button-link__icon">
+                      <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42299 9.56247L10.0439 13.8936L10.6543 13.1014L5.22817 8.92046V8.07971L10.6543 3.89874L10.0439 3.10662L4.42299 7.4377L4.22817 7.58782V7.83376V9.16641V9.41235L4.42299 9.56247Z" fill="#00A84F"></path>
+                      </svg></span><span class="button-link__text"> Назад</span></button>
+                </nav>
+              </div>
+              <div class="burger-menu__inner-bottom"> 
+                <ul class="burger-menu__nav-list"> 
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Гарантия</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Сервисные центры</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Страховка</div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="burger-menu__submenu" data-burger-submenu="cooperation">
+            <div class="burger-menu__inner">
+              <div class="burger-menu__inner-top"> 
+                <nav class="burger-menu__nav">
+                  <button class="button-link" data-burger-submenu-back=""><span class="button-link__icon">
+                      <svg width="16" height="17" viewbox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42299 9.56247L10.0439 13.8936L10.6543 13.1014L5.22817 8.92046V8.07971L10.6543 3.89874L10.0439 3.10662L4.42299 7.4377L4.22817 7.58782V7.83376V9.16641V9.41235L4.42299 9.56247Z" fill="#00A84F"></path>
+                      </svg></span><span class="button-link__text"> Назад</span></button>
+                </nav>
+              </div>
+              <div class="burger-menu__inner-bottom"> 
+                <ul class="burger-menu__nav-list"> 
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Монтажникам</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Проектировщикам</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Торговым компаниям</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Строительным компаниям</div></a>
+                  </li>
+                  <li class="burger-menu__nav-item"> <a class="burger-menu__menu-button" href="#">
+                      <div class="button__text"> Маркетинговая поддержка</div></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -419,13 +704,9 @@
               </ul>
             </div>
             <h1 class="page-title title-80">Документация</h1>
-            <div class="nav" active="2" data-horizontal-scroll="">
-              <div class="nav__list"> 
-                <button class="nav__item" data-tab-button="technical-catalog">Технический каталог</button>
-                <button class="nav__item" data-tab-button="technical-data-sheets">Технические паспорта</button>
-                <button class="nav__item active" data-tab-button="certificates-declarations">Сертификаты и декларации</button>
-                <button class="nav__item" data-tab-button="promotional-materials">Рекламные материалы</button>
-                <button class="nav__item" data-tab-button="brochures">Брошюры</button>
+            <div class="nav" active="2" data-horizontal-scroll="" isLinks="isLinks">
+              <div class="nav__list"> <a class="nav__item" href="#" data-tab-button="technical-catalog">Технический каталог</a><a class="nav__item" href="#" data-tab-button="technical-data-sheets">Технические паспорта</a>
+                <div class="nav__item active" data-tab-button="certificates-declarations">Сертификаты и декларации</div><a class="nav__item" href="#" data-tab-button="promotional-materials">Рекламные материалы</a><a class="nav__item" href="#" data-tab-button="brochures">Брошюры</a>
               </div>
             </div>
             <section class="documentation__content">
