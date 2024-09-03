@@ -354,24 +354,27 @@
           <div class="header-search__inner"> 
             <div class="header-search__title title-28">Поиск по сайту</div>
             <div class="header-search__content">
-              <form class="header-search__form" action="" id="header-search-form">
+              <form class="header-search__form" action="/" novalidate="novalidate" id="header-search-form">
                 <div class="header-search__form-input">
-                  <div class="input-ui custom-placeholder" data-input-parent="">
-                    <input data-input="" name="search-input" placeholder="Что вы хотите найти?" type="text" required="required"/>
-                    <div class="custom-placeholder__service"><span>Что вы хотите найти?</span>
-                      <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_3001_895)">
-                          <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                          <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                          <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                        </g>
-                        <defs>
-                          <clippath id="clip0_3001_895">
-                            <rect width="24" height="24" fill="white"></rect>
-                          </clippath>
-                        </defs>
-                      </svg>
+                  <div class="input-ui__wrapper" data-input-wrapper="">
+                    <div class="input-ui custom-placeholder" data-input-parent="">
+                      <input data-input="" name="search-input" placeholder="Что вы хотите найти?" type="text" required="required" data-validate="" data-error-message="error"/>
+                      <div class="custom-placeholder__service"><span>Что вы хотите найти?</span>
+                        <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_3001_895)">
+                            <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                            <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_3001_895">
+                              <rect width="24" height="24" fill="white"></rect>
+                            </clippath>
+                          </defs>
+                        </svg>
+                      </div>
                     </div>
+                    <div class="input-ui__error" data-error-container=""></div>
                   </div>
                 </div>
                 <div class="header-search__form-button">
@@ -743,22 +746,25 @@
                   <h4 class="title-28 footer__news-heading">Подпишитесь и получайте <br/> свежие новости первыми</h4>
                   <form class="footer__news-form" action="/"> 
                     <div class="footer__news-input">
-                      <div class="input-ui input-ui_white custom-placeholder custom-placeholder_white" data-input-parent="">
-                        <input data-input="" name="email" placeholder="E-mail" autocomplete="email" required="required"/>
-                        <div class="custom-placeholder__service"><span>E-mail</span>
-                          <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3001_895)">
-                              <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                              <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                              <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </g>
-                            <defs>
-                              <clippath id="clip0_3001_895">
-                                <rect width="24" height="24" fill="white"></rect>
-                              </clippath>
-                            </defs>
-                          </svg>
+                      <div class="input-ui__wrapper" data-input-wrapper="">
+                        <div class="input-ui input-ui_white custom-placeholder custom-placeholder_white" data-input-parent="">
+                          <input data-input="" name="email" placeholder="E-mail" autocomplete="email" required="required"/>
+                          <div class="custom-placeholder__service"><span>E-mail</span>
+                            <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_3001_895)">
+                                <path d="M5.63574 18.364L18.3637 5.63609" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M8.36315 8.3634L5.63574 5.63599" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                                <path d="M18.364 18.364L12 12" stroke="#232629" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                              </g>
+                              <defs>
+                                <clippath id="clip0_3001_895">
+                                  <rect width="24" height="24" fill="white"></rect>
+                                </clippath>
+                              </defs>
+                            </svg>
+                          </div>
                         </div>
+                        <div class="input-ui__error" data-error-container=""></div>
                       </div>
                     </div>
                     <button class="button-small"><span class="loader"></span>
