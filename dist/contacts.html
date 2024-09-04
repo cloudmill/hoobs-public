@@ -779,7 +779,7 @@
                       <div class="feedback-form__item">
                         <div class="input-ui__wrapper" data-input-wrapper="">
                           <div class="input-ui custom-placeholder" data-input-parent="">
-                            <input data-input="" name="name" minlength="2" data-validate="text" data-error-message="Только кириллица" placeholder="Имя*" type="text" required="" autocomplete="name"/>
+                            <input data-input="" name="name" minlength="2" data-validate="name" data-error-message="Только кириллица" placeholder="Имя*" type="text" required="" autocomplete="name"/>
                             <div class="custom-placeholder__service"><span>Имя*</span>
                               <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_3001_895)">
@@ -801,7 +801,7 @@
                       <div class="feedback-form__item">
                         <div class="input-ui__wrapper" data-input-wrapper="">
                           <div class="input-ui custom-placeholder" data-input-parent="">
-                            <input data-input="" name="email" placeholder="E-mail*" type="email" required="" autocomplete="email" data-validate="data-validate" data-error-message="Введите e-mail"/>
+                            <input data-input="" name="email" placeholder="E-mail*" type="email" required="" autocomplete="email" data-validate="email" data-error-message="Введите e-mail"/>
                             <div class="custom-placeholder__service"><span>E-mail*</span>
                               <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_3001_895)">
@@ -887,11 +887,11 @@
                   <div class="text-18 footer__news-label">
                      Подписка на новости</div>
                   <h4 class="title-28 footer__news-heading">Подпишитесь и получайте <br/> свежие новости первыми</h4>
-                  <form class="footer__news-form" action="/"> 
+                  <form class="footer__news-form" action="/" novalidate="novalidate"> 
                     <div class="footer__news-input">
                       <div class="input-ui__wrapper" data-input-wrapper="">
                         <div class="input-ui input-ui_white custom-placeholder custom-placeholder_white" data-input-parent="">
-                          <input data-input="" name="email" placeholder="E-mail" autocomplete="email" required="required"/>
+                          <input data-input="" name="email" placeholder="E-mail" required="" autocomplete="email" data-validate="email" data-error-message="Введите e-mail"/>
                           <div class="custom-placeholder__service"><span>E-mail</span>
                             <svg class="custom-placeholder__reset" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g clip-path="url(#clip0_3001_895)">
